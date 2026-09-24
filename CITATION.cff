@@ -9,7 +9,7 @@ abstract: >-
 authors:
   - family-names: Porter
     given-names: Anthony
-    affiliation: "Australian Institute for Machine Learning, University of Adelaide"
+    affiliation: "Australian Institute for Machine Learning, Adelaide University"
 license: MIT
 repository-code: "https://github.com/Diogenes67/local-gain-sensitivity"
 keywords:
