@@ -1,0 +1,1252 @@
+{
+ "created": "2026-09-24T05:19:51",
+ "n_files": 178,
+ "files": [
+  {
+   "set": "Survey, canonical protocol (45 models, five inputs)",
+   "used_by": "Fig. 5a,b; ED Table 1; ED Fig. 2",
+   "path": "results/survey_sigma1_v2/survey_results_v2_15sept.zip",
+   "bytes": 1288072,
+   "sha256": "665a3d3567563ec0b308c7d065ce701de7c2ef03a605b652704e2df76ca30369"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_EleutherAI_pythia-1_4b.json",
+   "bytes": 156674,
+   "sha256": "ba71d3c1dff5edae5cfe46b873601e8e3bcddf0b77850b7060cb6bd21962d6df"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_EleutherAI_pythia-410m.json",
+   "bytes": 157385,
+   "sha256": "474d5b4bce2333edd499a96b3cc5c37dd705b0cc6d8a33f33b6f97dca15fc1cb"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_FacebookAI_roberta-large.json",
+   "bytes": 157870,
+   "sha256": "de24b88c4bdfd27440a9861168a0b63fd6ad8bf46ffa8fd5590cf222742ea09b"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_Qwen_Qwen2_5-1_5B.json",
+   "bytes": 180509,
+   "sha256": "a088ef79ca468e5412c4f6919788ce4feebf99a1a45e84c74a68f41d4d8eb587"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_facebook_convnext-base-224.json",
+   "bytes": 235765,
+   "sha256": "ec9fa9a9f957cb40b315e72dd52648ddab5a91f93b1e6a31093756e44d9d750f"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_facebook_dinov2-base.json",
+   "bytes": 80070,
+   "sha256": "4d300ebb7548170659257051ab1fba8e90e3ff05518ca536de27929f05e225da"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_google_gemma-2-2b.json",
+   "bytes": 169075,
+   "sha256": "b0d6ec4d2a8d6db8bbc66acd1e15ebb3b75a67374690936ed14f309920c8a531"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_google_vit-base-patch16-224.json",
+   "bytes": 80495,
+   "sha256": "9d6e1e87bd390fc55271a8159d90d864cd4317fa3820f7077496e6b225095d76"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_gpt2.json",
+   "bytes": 79579,
+   "sha256": "d7bd7f855dea7adb89ad8a09171718048ff4898f9095263453caf27e4d13db03"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_meta-llama_Llama-3_2-1B.json",
+   "bytes": 105081,
+   "sha256": "4032710aa796fd1eff73346cd0192a9df121167509e52fab1feb7d55461c2b2a"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/sigma1_state-spaces_mamba-130m-hf.json",
+   "bytes": 157957,
+   "sha256": "6de18d00632839b0686c3ab3c402bdba7650dff82335597ef84ad31e6fb7ae3f"
+  },
+  {
+   "set": "Survey, 30 inputs (11 models)",
+   "used_by": "Fig. 5a; Methods",
+   "path": "NCS/survey_30inputs/results/survey_summary.json",
+   "bytes": 9051,
+   "sha256": "31d27bc21a6c5dda62cd664e5d12534766ec58d06d4e439c59e72acbeb019ef5"
+  },
+  {
+   "set": "Estimator validation (exact SVD)",
+   "used_by": "Fig. 1d,e",
+   "path": "NCS/validation/cellH.log",
+   "bytes": 18494,
+   "sha256": "444eb5ff318d5ba794f101b414ade4f607a831fa296e892939eaf8f300f51cfe"
+  },
+  {
+   "set": "Estimator validation (exact SVD)",
+   "used_by": "Fig. 1d,e",
+   "path": "NCS/validation/validate_convnext_mamba.ipynb",
+   "bytes": 290977,
+   "sha256": "5964a8e55291c9a24c3522a203c05ca02d0388c5e5f9e062dd7343434e0497aa"
+  },
+  {
+   "set": "Estimator validation (exact SVD)",
+   "used_by": "Fig. 1d,e",
+   "path": "NCS/validation/validation_cellH.json",
+   "bytes": 28037,
+   "sha256": "bb7bff483bc3281782641c1610f16e0ecf5e1b4fa0f16da3390f96fc0e9acd29"
+  },
+  {
+   "set": "Estimator validation (exact SVD)",
+   "used_by": "Fig. 1d,e",
+   "path": "NCS/validation/validation_convnext_mamba_from_log.json",
+   "bytes": 23435,
+   "sha256": "166389584a25fd6680bed7e5149c08035d9f29adf127a608843f7788cd32433e"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results/aubry_EleutherAI_pythia-410m_bfloat16.json",
+   "bytes": 59698,
+   "sha256": "dfb4139a4c9ebecbb231fd703d9c8ea9898bfce8b6fd17c952cf0bb9c70c4ccb"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results/aubry_EleutherAI_pythia-410m_float32.json",
+   "bytes": 59770,
+   "sha256": "ed32e865a8aad8c983e1b4bf55248d1f802e4d60a3ec512b774f8e65941ea19c"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results/aubry_gpt2_bfloat16.json",
+   "bytes": 31289,
+   "sha256": "e79bed7880bb4d2621aa9c4692638eb43b37140efc9f94e119a6a4c43892999e"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results/aubry_gpt2_float32.json",
+   "bytes": 31296,
+   "sha256": "e2b7529e4773f87fe6e9f34cfe063419a4342c74d49736e9d75ae5fc459eb31c"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results_blackwell/aubry_EleutherAI_pythia-410m_bfloat16.json",
+   "bytes": 59636,
+   "sha256": "9ba5803c2c327fd252666414cff34c23088099fc817a7cab68a995a50396eab5"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results_blackwell/aubry_EleutherAI_pythia-410m_float32.json",
+   "bytes": 59813,
+   "sha256": "261c8bf22551dfdbc0a78de131dca4dc410bbd3e33b1799351513796089dbe0b"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results_blackwell/aubry_gpt2_bfloat16.json",
+   "bytes": 31346,
+   "sha256": "5fff16020d3b9f664fa02c63655a9513c7fa19c80f4d8467c2b2f81ed61799e8"
+  },
+  {
+   "set": "Comparison with Aubry et al.",
+   "used_by": "Methods",
+   "path": "NCS/aubry/results_blackwell/aubry_gpt2_float32.json",
+   "bytes": 31356,
+   "sha256": "101c625514e4e295c83a5d36b05fa974bc7a7295e617af562ec422e601ef5a0b"
+  },
+  {
+   "set": "Destroyed-data and switching (d1 v2.1)",
+   "used_by": "Fig. 4a,b; ED Table 5",
+   "path": "NCS/d1/results_v21/d1_v21_results.zip",
+   "bytes": 101031,
+   "sha256": "fc0f49bb5acd3a3e6d59b22d2ae36a3fa6242fc4ca75f9c13f7e1499424ebbe4"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/factorial_v2.zip",
+   "bytes": 48903,
+   "sha256": "08ba9b00c3cc86c38ff695c4777efeb6987faaec3f68784beb20be67bc9938bc"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/factorial_v2_from_log.json",
+   "bytes": 4906,
+   "sha256": "f2ef90bb9e910beef1077cab7e08e7b18ac982c5a18335615dbbc78b4429028a"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/factorial_v2_with_output.ipynb",
+   "bytes": 258658,
+   "sha256": "dc56acfe47e17f245caec37f1ee9f9667ae476532509d5239a9d93e827fe549d"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/AR_s0.json",
+   "bytes": 7022,
+   "sha256": "f5098ee9e322558723ddcd35e960ccc337327fc71611d397286dacc7ca8c7fc6"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/AR_s1.json",
+   "bytes": 7033,
+   "sha256": "9283cf1f77c378faea94c3e64315ced768e0d92d14b8871464a40e8c9f67ff5a"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/AR_s2.json",
+   "bytes": 7027,
+   "sha256": "83cff38b2e28b5b032460f71811dff03df03262b68e720e47a0bc47379d57725"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/AR_s3.json",
+   "bytes": 7025,
+   "sha256": "2f739af85b9e8e802b76c3b5b710ce29a7566192dc59378ac17a04c88c1bb1f0"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/AR_s4.json",
+   "bytes": 7018,
+   "sha256": "ae3b5ad7fa6f80b8a7eca7796d7f4cecb437def7fb20cd7693fa1156d5f35b37"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/CMLM_s0.json",
+   "bytes": 7038,
+   "sha256": "64a305988a79d70944ca48a7fb3459de3fd09f440e32486a0036bfef6b5a052d"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/CMLM_s1.json",
+   "bytes": 7058,
+   "sha256": "cd4e438da3bc27450a293dee33c30ce038425a5907a90d2ffde2260d2e88f9e4"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/CMLM_s2.json",
+   "bytes": 7025,
+   "sha256": "70e5c1aae6b148fc5d9c466bbd6b6851527b27790e1eae9691451fab607e5f0d"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/CMLM_s3.json",
+   "bytes": 7033,
+   "sha256": "644e37ad7c31618df0e27f02e1068b0423e32e6b8cfd8d4f914f886d4808530d"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/CMLM_s4.json",
+   "bytes": 7038,
+   "sha256": "cb748c55fdf6c9a7b3e3a5a4d0fbf8af5f0004a5c14eb778afaeb7bd75c4d20f"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/MLM_s0.json",
+   "bytes": 7043,
+   "sha256": "abf2b1bac9acdc3def4c420d7c8a2ccbf30b38c1a0d8cd0dac509aac7c3512e9"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/MLM_s1.json",
+   "bytes": 7033,
+   "sha256": "5d8bd4328386c18e644666073a16bef11956243382252914a1e8d8a040589e09"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/MLM_s2.json",
+   "bytes": 7062,
+   "sha256": "a1d7b9e9c76ab45cb22655c287e328139a2179e1e4cf7cb6754cabc955a60f63"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/MLM_s3.json",
+   "bytes": 7048,
+   "sha256": "6f0d9847206630f9f911c02a5cd82896966469e40aad25ac8e6c117c973ff828"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/MLM_s4.json",
+   "bytes": 7035,
+   "sha256": "38f3f4d8d7824fd752698f79a8fe07c21c7f06c9b1b5c212346d7ce704941688"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/PLM_s0.json",
+   "bytes": 7022,
+   "sha256": "636eaad7294ab042eb5f3c04f12a94cb3d69c9fed1ec8b7ec53908525b29f7c5"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/PLM_s1.json",
+   "bytes": 7045,
+   "sha256": "e015e9f30bf9f7fc5354f9fe3d9094927c3fbdc9042fb6890cac39a32f214ec7"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/PLM_s2.json",
+   "bytes": 7052,
+   "sha256": "b541542377fcf7440f2d391ffd4a7c1ce8396d11b837d5c2ede3b8765b7df2da"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/PLM_s3.json",
+   "bytes": 7040,
+   "sha256": "5dfc4d62114f540133beb35581e75587ef56991aa88fa178c2a43d079d3009c8"
+  },
+  {
+   "set": "Mask x loss (factorial v2; per-model summary parsed from the run log)",
+   "used_by": "ED Fig. 9a; Methods",
+   "path": "NCS/factorial/results/PLM_s4.json",
+   "bytes": 7030,
+   "sha256": "b59e6b34f9d69878819b7f15a6eb3fd936046ed271e7649444d4a24db7d0e78d"
+  },
+  {
+   "set": "Width x depth grid",
+   "used_by": "ED Fig. 9b",
+   "path": "NCS/grid/b1_grid_output.txt",
+   "bytes": 22151,
+   "sha256": "b84be3b7be62fa8cc345933b7146b29f23dd62bda00776d84e35a247ab7dd281"
+  },
+  {
+   "set": "Width x depth grid",
+   "used_by": "ED Fig. 9b",
+   "path": "NCS/grid/b1_width_depth_grid_reconstructed.json",
+   "bytes": 23039,
+   "sha256": "f0333f35f71bbf6825ecadc0cf1abdf69e21778354fcdb6e54b912ab080b99ef"
+  },
+  {
+   "set": "Reprofile v2 (topology, skip coefficient, k-gram)",
+   "used_by": "Fig. 4c; ED Figs 5 and 10; ED Table 5",
+   "path": "NCS/reprofile/results_alpha.zip",
+   "bytes": 86997,
+   "sha256": "98987ce66cddbff4e2d4a30da47dfa5fe9c84c5fa88359e7df4fa4d4d659ec3d"
+  },
+  {
+   "set": "Reprofile v2 (topology, skip coefficient, k-gram)",
+   "used_by": "Fig. 4c; ED Figs 5 and 10; ED Table 5",
+   "path": "NCS/reprofile/results_kgram.zip",
+   "bytes": 194426,
+   "sha256": "31905f1161650998891c11430940bb47a462654390defd663e3e0694fc0b696b"
+  },
+  {
+   "set": "Reprofile v2 (topology, skip coefficient, k-gram)",
+   "used_by": "Fig. 4c; ED Figs 5 and 10; ED Table 5",
+   "path": "NCS/reprofile/results_topology.zip",
+   "bytes": 116354,
+   "sha256": "92152ff481a654621f2c0dfd9f38a7f273c831fce91a876d4a222e927e333c69"
+  },
+  {
+   "set": "Entropy-matched Markov family",
+   "used_by": "Fig. 4d,e; ED Table 5",
+   "path": "NCS/markov/markov_stats.json",
+   "bytes": 20307,
+   "sha256": "45f1be4de820870511e66dec3b86e7bab33922393ad22fba878264b987769020"
+  },
+  {
+   "set": "Entropy-matched Markov family",
+   "used_by": "Fig. 4d,e; ED Table 5",
+   "path": "NCS/markov/markov_v1_results_10k.zip",
+   "bytes": 144599,
+   "sha256": "9bfa2f0b9a7f76288e18a562219760d365fa18d536a52cf7610cce96756a945b"
+  },
+  {
+   "set": "Entropy-matched Markov family",
+   "used_by": "Fig. 4d,e; ED Table 5",
+   "path": "NCS/markov/markov_v1_results_2k.zip",
+   "bytes": 134477,
+   "sha256": "69ddd7ce936e7fcbd405d13223d05fb3ed1ed10ced3900bc8878506757e9be19"
+  },
+  {
+   "set": "Scale point, 24 layers",
+   "used_by": "Fig. 2e; ED Table 5",
+   "path": "NCS/scale/scale_stats.json",
+   "bytes": 3169,
+   "sha256": "26fe915d4e4aa825933434ded7cf1824f3fe8b53a9dcbde851f37eeb808195a5"
+  },
+  {
+   "set": "Scale point, 24 layers",
+   "used_by": "Fig. 2e; ED Table 5",
+   "path": "NCS/scale/scale_v1_results.zip",
+   "bytes": 1360414,
+   "sha256": "a33e1a09a6ef7b37cc06eaa40feec99747736fd4066ae4136c300ecf2974f0ee"
+  },
+  {
+   "set": "One-hop synthetic sources",
+   "used_by": "Methods",
+   "path": "NCS/synthetic/synthetic_context_v2_results.zip",
+   "bytes": 194957,
+   "sha256": "647adfb893d82a30e0f6d4505cc5751262c572be63a8197e86385bf95ca6e05c"
+  },
+  {
+   "set": "Intervention comparison",
+   "used_by": "Table 1; Methods",
+   "path": "NCS/intervention/results/intervention_compare_8models_summary.txt",
+   "bytes": 4855,
+   "sha256": "ec91d89d51b34dcbc5d627f937f11fec744408015f7e1820d1ea2371d3398f24"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_d1_real_s0.json",
+   "bytes": 617563,
+   "sha256": "e0cbfce5ba0ec4d853a7c653e3f9305479d2c2104778ad9d7c936de0556dc9fe"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_d1_real_s1.json",
+   "bytes": 617124,
+   "sha256": "af5b9e14ea2841bf3d259404cde69f5473d5a56d6979264aafacb0f603c0cb4a"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_d1_shuffled_s0.json",
+   "bytes": 620381,
+   "sha256": "3983faadc6f5d88a4838862ffda16c4cec6b8da58d5798af6635c4e35097f8b2"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_d1_shuffled_s1.json",
+   "bytes": 620283,
+   "sha256": "b20637daf6c78c4cba5677b27991367ebf9b531e632ca6c3778e98a302016cb2"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_kgram_1_s0.json",
+   "bytes": 619138,
+   "sha256": "8480a01c5b6c9cc8a5bcbb96554d03fbe6d71908b21c8d76f005b2ec93fba94b"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_kgram_1_s1.json",
+   "bytes": 619652,
+   "sha256": "d8fe42037c90f48dd5e7a4203f6e82fa96b4512f83fa5d959657a155e16045b6"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_kgram_8_s0.json",
+   "bytes": 612356,
+   "sha256": "78b0a3292dc7f2bd65849977463183c25688bf829d22da8d2cc3c482c5a32c99"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/linresp/linresp_kgram_8_s1.json",
+   "bytes": 612984,
+   "sha256": "4ef154e7cf447958fecf3e50a72a72f7511be31bb65cf3feb37c785c4429692b"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/matched_results.zip",
+   "bytes": 5627806,
+   "sha256": "f146d3557766f5a40d4fc04ef54fc7188749b407a7003b49ecaa5ed21e46e44e"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/matched_stats.json",
+   "bytes": 35388,
+   "sha256": "7df5d07ae6fc6719c25bfa67543ad3386af4216a9ea1ce6cdbd0be547dd1f591"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_d1_real_s0.json",
+   "bytes": 2151334,
+   "sha256": "c958be1a13b55534a3b0c69985ae71c1f15e9ffd7fef7e1dc6100b8332151683"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_d1_real_s1.json",
+   "bytes": 2151956,
+   "sha256": "9b470cd3aa6d1af048840900dd9ae8b45521c9b915f9a0fba38cdab889998fd3"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_d1_shuffled_s0.json",
+   "bytes": 2163554,
+   "sha256": "981d68b698c8835d6959ab4bbe563a2666caa334a095add9604114eef5a63b00"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_d1_shuffled_s1.json",
+   "bytes": 2162705,
+   "sha256": "254b9c37d4a0ceb16820c8aa32d9c2e52615a5922244b6a13dfa7db24cd9b75c"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_kgram_1_s0.json",
+   "bytes": 2158831,
+   "sha256": "a8a5a44665b3f9ec886fda451ad4915f040b6603441f12dd50ae1147f09b1563"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_kgram_1_s1.json",
+   "bytes": 2158648,
+   "sha256": "c6c417043c18cbf66082d802d9e3a171716ce0e5b1a46f2d73442fa8bf0a1dff"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_kgram_8_s0.json",
+   "bytes": 2139455,
+   "sha256": "31340e21016c3e3e8a0e78dec3ade9e385a6437e3786528ed8c0263cfe176955"
+  },
+  {
+   "set": "Matched assay, controlled (50 models) and sampling check",
+   "used_by": "Figs 2a\u2013e and 3a,c\u2013e; ED Fig. 7; ED Table 4",
+   "path": "NCS/matched/sampling/matched_kgram_8_s1.json",
+   "bytes": 2139091,
+   "sha256": "48f30719587a94a0b2da1b5f80f519e336c455900b73441fc5d19f7b57ab9500"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/e1_extra.json",
+   "bytes": 2975,
+   "sha256": "2ab9b8a73e6a0a11d19561a035bf0c590753ffe73f792b36f78db0dd4992f8ea"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/matched_pretrained_stats.json",
+   "bytes": 6401,
+   "sha256": "5004540fb7223ffc35ff297a1d0c80d768d212788c4fe38eb027f5a5da771940"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/plumbing_checks.json",
+   "bytes": 757,
+   "sha256": "1f88fe7abdf47f277574e898c4fbc04936e2145328778e8c69eab1d11580ab39"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_EleutherAI_pythia-1_4b.json",
+   "bytes": 8383764,
+   "sha256": "cf60adb9b0e89ca09ae1b80ddc05cf3f1c3b97839a13f5d629d587ca0d7ee76c"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_EleutherAI_pythia-410m.json",
+   "bytes": 8410872,
+   "sha256": "57931bf1e8c773a18277624828208144e77f20f24737a5ae6e10d2de5263bea7"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_Qwen_Qwen2_5-1_5B.json",
+   "bytes": 9840769,
+   "sha256": "16b4bc79ab609da6db86a87a7691988d5516c08e8ee04aa35d27164631542697"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_google_gemma-2-2b.json",
+   "bytes": 9167767,
+   "sha256": "d54b021bf8fb54695aba0dc1415e5f5b356b9fc0070cb9e11c69207ed8b1f67d"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_gpt2.json",
+   "bytes": 4193960,
+   "sha256": "3fa6085df4ff7e88877f9a7b825cc3a65b67e889ae54e6da616f8ca65c84da48"
+  },
+  {
+   "set": "Matched assay, pretrained decoders",
+   "used_by": "Figs 2f and 3b\u2013e; ED Table 4",
+   "path": "NCS/matched_pretrained/results/mp_meta-llama_Llama-3_2-1B.json",
+   "bytes": 5611714,
+   "sha256": "38baa0e43671cba99f35c0bb9099d38a006b31fea40a749c0ee5e580e69649ad"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/census_v4.csv",
+   "bytes": 23255,
+   "sha256": "02e9e84fa46f138619bf336c00c4685f792384e051a32be576154f2eef4210cb"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/census_v4.json",
+   "bytes": 47253,
+   "sha256": "05e4b37497f396ea7857c87d6359287bbe863300fecea3af4e7f3003875b646d"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/census_v4_results.zip",
+   "bytes": 23190,
+   "sha256": "ef81847a8e3dc5bbedc0f776ea5a108e9d47c9846cb8e78271eea4982ef40755"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/census_v4_stats.json",
+   "bytes": 1524,
+   "sha256": "e1a43587eae71221b41a8f19981e0f524d6785f4ca96ebbadf4dc05cd41cc136"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-1.4b.json",
+   "bytes": 3259,
+   "sha256": "e83d798cbb70fdbc6a613580c8fa0ae910fc07433c550997f3a0248ed08112b1"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-12b.json",
+   "bytes": 4660,
+   "sha256": "782cfd8602154c7a552d2a7a9feab5268abca8d754702ada0982cebee09074e2"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-160m.json",
+   "bytes": 1898,
+   "sha256": "079f9cb46c8c0bd71e183f7c699c9e27f50c92d9df6227bb66c8d58a5871deaa"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-1b.json",
+   "bytes": 2357,
+   "sha256": "5a6ad8bad4504279ebae170bc137e4327f02da5f86932a9a0be615c5b83b5073"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-2.8b.json",
+   "bytes": 4181,
+   "sha256": "4d438a350de4cd7a4219ec24e55ad5c569be36f0a1b704483d2eec99dfdf1ad4"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-410m.json",
+   "bytes": 3256,
+   "sha256": "455678c337dec50fe7557604fb40a6f2bfb32bd1735e88f11dd335734caeb4aa"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-6.9b.json",
+   "bytes": 4207,
+   "sha256": "fff1e66a922c2ae174bb2d5dee21dab11d01d39a79fb46c37048b5a406c00381"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_eleutherai_pythia-70m.json",
+   "bytes": 1228,
+   "sha256": "71f1628d4fde9bf51217d69e1e0b199b9799126b3a110bdc433d00d0709d9fd8"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_convnext-base-224.json",
+   "bytes": 9857,
+   "sha256": "3d7720eddff4a3e5897778eb8972cbbfffaf29cc5ce566508d82103672c76625"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_convnext-large-224.json",
+   "bytes": 9880,
+   "sha256": "b5893e593d7cbc2fad397417291301aaab1119fb13141afd548a9e87651464b2"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_convnext-small-224.json",
+   "bytes": 9836,
+   "sha256": "a3049da315e755e911fbf8f9e9f763e7f576df0d87b39a9115c199ebc5e6bdb0"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_convnext-tiny-224.json",
+   "bytes": 5279,
+   "sha256": "a2560faaf02572f2885fd934fc7623d8506c4f1a3d4adb53f33792fa6c7c6d30"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_dinov2-base.json",
+   "bytes": 3028,
+   "sha256": "70e599e7a8d9f4d89753c48819e1ec261febcb8744c5e0efc5289d37fd7ff6e2"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebook_wav2vec2-base-960h.json",
+   "bytes": 2414,
+   "sha256": "dbe5ace050902a7b0d00878c57cc2f79f1d42f1c4ccadfc40a0d9ac8e3a776d5"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebookai_roberta-base.json",
+   "bytes": 2468,
+   "sha256": "6277bba624006876bb496315a39ac2af401aad3915efe95dfdefaee4730d9684"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_facebookai_roberta-large.json",
+   "bytes": 3646,
+   "sha256": "dbcfc2176dfd3629fe73b7d7f0c65a06f010e3edcce4d6325859f3575ff16324"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google-bert_bert-base-uncased.json",
+   "bytes": 2481,
+   "sha256": "062b3fff13e455fb5d83301c46fd3476e4ae9623c302ef4ca4b3e7b836efbb2c"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google-bert_bert-large-uncased.json",
+   "bytes": 3695,
+   "sha256": "f471af3ca67a483b6629cab013dcbbc07809824546fbf3b2606545d382a21b01"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google-t5_t5-base.json",
+   "bytes": 2566,
+   "sha256": "4a16db77056eb6d2c3eab0e54838e5c91d1adb9fbc2fe2e576c0b8fa7cb4e60b"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google-t5_t5-large.json",
+   "bytes": 3866,
+   "sha256": "3a197905119bda2f947f1e7463919ba4aec218afe511e585c43b71c022ad40e9"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google-t5_t5-small.json",
+   "bytes": 1938,
+   "sha256": "be4a8eab294934068bfe5c09786b15ddcf54ff84e5d5659e093a7a9aa1477914"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google_flan-t5-large.json",
+   "bytes": 3820,
+   "sha256": "e28864118480cf6a5deb6044f2b662a45be0ec3a4cfdff40de7cc245b1516df8"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google_gemma-2-2b.json",
+   "bytes": 1395,
+   "sha256": "945f05e1029652bdf8d2ed397e078e94425c7f5a4d125d0fb52f596511061286"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_google_vit-base-patch16-224.json",
+   "bytes": 3032,
+   "sha256": "f5ad70f5b689c4f08dd617994c04ee9edd468f95cd9aa9522a27df6f12c59647"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_gpt2-large.json",
+   "bytes": 4851,
+   "sha256": "fc5aed458994cd1cba5aa223e300a017c8a1cd178578e04221c1365c5e14cd4d"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_gpt2-xl.json",
+   "bytes": 6261,
+   "sha256": "2e2d00bea39fb640e0b131e4c84c548bd2d930de1b5914235e8966aaf3b0deb4"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_gpt2.json",
+   "bytes": 1895,
+   "sha256": "3aba23b447b493faac709eba0e411f26b1a66d96cecb7ac9643075c9ec58545e"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_meta-llama_llama-3.2-1b.json",
+   "bytes": 2530,
+   "sha256": "8419939cfeaddfed97cc88ec06625f4f5e0b34a4405375b42f4ca8256bd4bc6a"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_meta-llama_llama-3.2-3b.json",
+   "bytes": 3906,
+   "sha256": "9e538fd30766af7a31c276678f8c84f664c252c56a6427b3465c09be06e04f5d"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_microsoft_phi-2.json",
+   "bytes": 4389,
+   "sha256": "72f05e237bc5dbfacdde8d2a73066eecd4198d1efb4bc4523711936679273b62"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_mistralai_mistral-7b-instruct-v0.2.json",
+   "bytes": 4225,
+   "sha256": "6b3d7e2afea91f9b1484db4de25d50cd565ad0484be8a95233e613d553690d5e"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_mistralai_mistral-7b-v0.1.json",
+   "bytes": 4218,
+   "sha256": "a53ee14ae3d86b2879e224ea0259dcd46a26268933c6131e0b9f16ca97d9af1b"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_openai_whisper-small.json",
+   "bytes": 2499,
+   "sha256": "1a43a4eac0ab7962b36349625f9fded9bae1670b92117ca71ef1a6e1fd26d246"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2-0.5b.json",
+   "bytes": 3256,
+   "sha256": "bc1fc340ca6b1d750f4d091db53fe3e835aea39f0e02d1200c8f131bf46c1fb3"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2.5-0.5b.json",
+   "bytes": 3245,
+   "sha256": "4c55bb74489910fbd64c430a07bc7fa938036e5af7eccb3c76076ae1af3b7adb"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2.5-1.5b.json",
+   "bytes": 3717,
+   "sha256": "cdad85c6c23b236c3d7fe712128a6f101f1562d9ac7cee8fc5476688c7cbc13e"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2.5-14b.json",
+   "bytes": 6192,
+   "sha256": "c8fc93eb8503e98c9539f5e0c58b0eed88713d799e661a4ce725ca23869b5042"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2.5-3b.json",
+   "bytes": 4777,
+   "sha256": "130760989ca6fdd3c7622b8d652403a3d001e0f4967aa714143fafb61723bf01"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_qwen_qwen2.5-7b.json",
+   "bytes": 3883,
+   "sha256": "0828dccb55d16c1a9482472b97dbd051d742fee8d24e405553f7196cee91c153"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_state-spaces_mamba-1.4b-hf.json",
+   "bytes": 6268,
+   "sha256": "1caff0834ab687373b57af921ed51d1abf484c6d84f14dea6f30785629c2e36c"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_state-spaces_mamba-130m-hf.json",
+   "bytes": 3479,
+   "sha256": "9010311e87b5ccb4d50650fcf8881a9e38b11ee5e5c4de48b69ea77c00ae4b38"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_state-spaces_mamba-2.8b-hf.json",
+   "bytes": 8139,
+   "sha256": "df22f06b62486a947a4d25adaef9367bc35bd41484988c7ff94862a50982e03a"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_state-spaces_mamba-370m-hf.json",
+   "bytes": 6228,
+   "sha256": "7c66f17c44cfa87fe7f777997eff27700486748111c56e59c8e95956472f8313"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_timm_mixer_b16_224.goog_in21k_ft_in1k.json",
+   "bytes": 3036,
+   "sha256": "67ba816a10126504f3ce8ad2535e30ed801db71c7190c53d16a9c21103be5aa7"
+  },
+  {
+   "set": "Census v4 (branch rotation)",
+   "used_by": "Fig. 5b; ED Table 2; ED Fig. 6",
+   "path": "NCS/census_v4/merged_v4/perlayer_timm_mixer_l16_224.goog_in21k_ft_in1k.json",
+   "bytes": 4772,
+   "sha256": "20e11c683036e4fd7b432b121cb7efe988a55cd3f43c53399dfa8f09e41e9e6d"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/fig1_nmi_check.json",
+   "bytes": 1072,
+   "sha256": "1a7b618a5177046fddf755a5eabeef6fe1a011266288d71d03b6e4e4120ed260"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/fig2_scale_nmi_check.json",
+   "bytes": 1055,
+   "sha256": "d7cced200bf2196b8baa3cf3e91ac84e0aad8110c1c0f7ea3677894380cc04b8"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/fig3_direction_nmi_check.json",
+   "bytes": 2906,
+   "sha256": "6ef30ad2d1f3d184456de04e82ebceefbf70350b172da2f4703e395effd4bbfb"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/fig4_data_nmi_check.json",
+   "bytes": 820,
+   "sha256": "1b222197994dc49912a40f78fd85b5ae54f240f3779e6811bc821834ff5b8941"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/fig5_pretrained_nmi_check.json",
+   "bytes": 1418,
+   "sha256": "f2be99d50ef666479badc5c34551f8155eb9efa571758ff0fdbf39fa7f217549"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/linresp_afterblock.json",
+   "bytes": 12673,
+   "sha256": "7c76c041cd308d46a6829096fdb5a957bc04bd8b795495cd4dd1992f493abf2b"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/linresp_stats.json",
+   "bytes": 10734,
+   "sha256": "5e50ed125604dc4c434ce42288961bc94116a09125d31ad0c5ee7960e0e5c8c5"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/loco_check.json",
+   "bytes": 12039,
+   "sha256": "00da11563cce88f6b154a7e7d6234b43c35ab4be18daae2eaac6c4d694dde18d"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/region_check.json",
+   "bytes": 17240,
+   "sha256": "6c7ad03d37871d46ed68aadb5b0ff3a6e5c4dcfe3b9cb1dee4792cadd7c125eb"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/regression_check.json",
+   "bytes": 9855,
+   "sha256": "107496c1d81d73c2301394d791027c129027d89545f955de484e12dfbd0fee13"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/sampling_check.json",
+   "bytes": 11015,
+   "sha256": "a48ec51068b498d4e6b9ea2cb97e79fbc5f15b028bd62ec142576997b4e3d8ce"
+  },
+  {
+   "set": "Analysis outputs",
+   "used_by": "Figs 1\u20135; ED Tables 4 and 5",
+   "path": "NCS/tables/ed_tables45_check.json",
+   "bytes": 6497,
+   "sha256": "baad3671f84f150085f80a3197ee457bc685459e48ba3b65de03a71eb66b37ee"
+  },
+  {
+   "set": "Retained March 2026 files (mechanism experiments)",
+   "used_by": "ED Fig. 8; SN 1 and 4",
+   "path": "results/d3l_alignment_adaptation/d3l_aggregate.json",
+   "bytes": 3145,
+   "sha256": "e3c99ecab0f57a99f0418ab76511cee19ea13c7d5ae6c0c89fe5dff9b2d5dc99"
+  },
+  {
+   "set": "Retained March 2026 files (mechanism experiments)",
+   "used_by": "ED Fig. 8; SN 1 and 4",
+   "path": "results/exp2a_bracket_seed0.json",
+   "bytes": 5310,
+   "sha256": "d299315368eb27c03805176d0bd1e1c5798c91a84fb57e1fe49bd80ec1288528"
+  },
+  {
+   "set": "Retained March 2026 files (mechanism experiments)",
+   "used_by": "ED Fig. 8; SN 1 and 4",
+   "path": "results/exp2a_bracket_seed1.json",
+   "bytes": 5316,
+   "sha256": "f1597a25b4931bbbc14de347302c6b1b4cfa53347184a9ddfd0489b1f4161094"
+  },
+  {
+   "set": "Retained March 2026 files (mechanism experiments)",
+   "used_by": "ED Fig. 8; SN 1 and 4",
+   "path": "results/exp2a_bracket_seed2.json",
+   "bytes": 5294,
+   "sha256": "16aa07c59317b8431dffbad617e8b24b5f856ee492b300da09d6ea06bc71a2bd"
+  },
+  {
+   "set": "Retained March 2026 files (mechanism experiments)",
+   "used_by": "ED Fig. 8; SN 1 and 4",
+   "path": "results/exp2a_bracket_seed3.json",
+   "bytes": 5297,
+   "sha256": "6368da75086d0f3a89e3692c1bda01f6dcfc38fa2b77f09d01420d70c7e38fba"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step0.json",
+   "bytes": 2982,
+   "sha256": "3536cc2224d6d3eec7ecde71787e0ccf93465b2b4a0d6528ad331f6c0de4fb5a"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step1000.json",
+   "bytes": 2881,
+   "sha256": "b71caa184341804503a21f8ef493c4f07be2c15de76f960b02d24c9cdd98a25b"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step100000.json",
+   "bytes": 2816,
+   "sha256": "4c0ecb9517c292519133e13326d4cadcc9aa4d826f8b33ddf7231cab7d28975c"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step143000.json",
+   "bytes": 2911,
+   "sha256": "f1b2a4e27f5fdb5e5a34632e48a218765ca80b76c7e09b96f4e8b5ab71bf10f7"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step16000.json",
+   "bytes": 2832,
+   "sha256": "884f28eecac9dd5b74a69bcd881db8ec0ace80e31bb21dfbdfe794a25f313ea8"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step2000.json",
+   "bytes": 2852,
+   "sha256": "7e0cef2ab562002f8ecac6cbda1a3541e3898f40d4e5552cc844dde1efb686ba"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step32000.json",
+   "bytes": 2834,
+   "sha256": "9854ae394d94d3a51eacfee81b4a371760b49f5789daa614adea256144c0b71d"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step4000.json",
+   "bytes": 2848,
+   "sha256": "0535858a04ad3c4e9fd39506a6bce979d99e01834688a8b7a33a1544bad75ef4"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step512.json",
+   "bytes": 2916,
+   "sha256": "064140598c34a1d2de1ecbea9927f2031414b22f76c91189e1475bf06a650817"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step64000.json",
+   "bytes": 2826,
+   "sha256": "eb533f9cf6f573321db8b8fb912886fc134c1152b5e2723cf8220461b8509bad"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/census/census_step8000.json",
+   "bytes": 2837,
+   "sha256": "24d40eafa888083e2ea65d53e3a98c719c7e50c48d0249e197bab6262c9239c2"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/e7_summary.json",
+   "bytes": 3784,
+   "sha256": "0c0c514814b0a9bf31f6d906e34614530a1841070bc55249b1e4235908750505"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/run_log.txt",
+   "bytes": 43813,
+   "sha256": "995659adf7f2717812b33223c9aeaddb38e6dcecca6a948d905ff638d59513bb"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step0.json",
+   "bytes": 160420,
+   "sha256": "8c0eba14a6ca1328784fc12eb5a9f26be869dcdce369416f7508af2623e2e448"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step1000.json",
+   "bytes": 160293,
+   "sha256": "9d5df71a02652653cd447f63e2a806f1069e63fe04a7e9540cd29ed61075d8e9"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step100000.json",
+   "bytes": 157881,
+   "sha256": "6a4bfb2c4cca98c6261e2db851d229af237ce014c05ceecfbf9e99b7120531c5"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step143000.json",
+   "bytes": 157583,
+   "sha256": "b6f6dd50c65757fe2a6c4c275fb7140b9ae3912b97cab51a9e41b96a0c718f51"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step16000.json",
+   "bytes": 158514,
+   "sha256": "d84db650eaf6a1c36abf737b1538df805e69e45c91eef746d13761b60d8ea652"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step2000.json",
+   "bytes": 159478,
+   "sha256": "ecc74641da77b708e2df5c8103f011f48c7956e922c8ce45179386aa381680b8"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step32000.json",
+   "bytes": 158083,
+   "sha256": "d91df7c17f9631bedc03f1b2cb4a5b26cf7cd1638b8dd82b9c45d805e826c96d"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step4000.json",
+   "bytes": 158809,
+   "sha256": "909b878467a37fb1b5dd37be13c9f13d9ad0e3522930132ba25c8f23dc4ec93a"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step512.json",
+   "bytes": 160262,
+   "sha256": "66d5d1d3291be528f3637ad3a60dcbab19ed5c34ea64bf1352ad374e844b3b51"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step64000.json",
+   "bytes": 157944,
+   "sha256": "c77ce29959c6cfed80eeb6a0cd5a63996bc114a07822fcfd024a605beb7049d4"
+  },
+  {
+   "set": "Pythia-410M public checkpoints (E7, 23 Sept 2026)",
+   "used_by": "Fig. 5c; ED Fig. 4c,d; ED Table 3",
+   "path": "NCS/e7_checkpoints/results/sigma1/sigma1_step8000.json",
+   "bytes": 158827,
+   "sha256": "0be0d4e4ca31437ff59da90fa56a672519df0e90d34b219b4c9d2b688fd75c42"
+  }
+ ]
+}
