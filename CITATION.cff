@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+type: software
+title: "local-gain-sensitivity: code for 'When local amplification predicts downstream sensitivity in neural networks'"
+abstract: >-
+  Token-local gain (sigma_1 of a block's token-local Jacobian) estimated by power iteration on J^T J with
+  forward- and reverse-mode products, the matched perturbation assay, the controlled training experiments,
+  the pretrained-model census, and the scripts that regenerate every figure and table of the paper.
+authors:
+  - family-names: Porter
+    given-names: Anthony
+    affiliation: "Australian Institute for Machine Learning, University of Adelaide"
+license: MIT
+repository-code: "https://github.com/Diogenes67/local-gain-sensitivity"
+keywords:
+  - Jacobian
+  - local gain
+  - perturbation sensitivity
+  - transformers
+  - interpretability
