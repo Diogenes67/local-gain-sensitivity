@@ -1,0 +1,156 @@
+{
+ "hf_id": "timm/mixer_b16_224.goog_in21k_ft_in1k",
+ "arch": "mixer",
+ "family": "MLP-Mixer (vision)",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 59,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 0.0,
+ "delta_L_profile": [
+  4.669057559967041,
+  5.267417828241984,
+  3.1763857126235964,
+  5.004412380854289,
+  4.730837965011597,
+  3.2850029389063518,
+  3.704010574022929,
+  4.24802889029185,
+  3.694658335049947,
+  2.334055459499359,
+  1.3101639767487845,
+  1.6051326791445415
+ ],
+ "delta_L_ci": [
+  [
+   4.49287633061409,
+   4.8387200208504995
+  ],
+  [
+   5.066970876455307,
+   5.484465801715851
+  ],
+  [
+   3.016498481233915,
+   3.30536615828673
+  ],
+  [
+   4.800522149801255,
+   5.171594823996227
+  ],
+  [
+   4.534125772714615,
+   4.900963547627131
+  ],
+  [
+   3.1415966381629308,
+   3.422552465001742
+  ],
+  [
+   3.537809354066849,
+   3.847182012200356
+  ],
+  [
+   4.111351386706035,
+   4.41395986576875
+  ],
+  [
+   3.5647310986121497,
+   3.8467088439067205
+  ],
+  [
+   2.2080266501506167,
+   2.471798269848029
+  ],
+  [
+   1.2523705478012561,
+   1.3721796172857286
+  ],
+  [
+   1.5338832180698712,
+   1.6674677602450052
+  ]
+ ],
+ "kl_profile": [
+  4.669057559967041,
+  5.267417828241984,
+  3.1763857126235964,
+  5.004412380854289,
+  4.730837965011597,
+  3.2850029389063518,
+  3.704010574022929,
+  4.24802889029185,
+  3.694658335049947,
+  2.334055459499359,
+  1.3101639767487845,
+  1.6051326791445415
+ ],
+ "baseline_kl": 0.0,
+ "readout": "KL(clean || scrambled) over the ImageNet-1k head on CIFAR-100 test images (primary); self-label cross-entropy alongside",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "mlp_tokens",
+  "mlp_channels"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 16,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 5.267417828241984,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "vision_extra": [
+  {
+   "selflabel_ce": 7.681073681513468
+  },
+  {
+   "selflabel_ce": 8.09468502998352
+  },
+  {
+   "selflabel_ce": 5.534633843104045
+  },
+  {
+   "selflabel_ce": 7.997932052612304
+  },
+  {
+   "selflabel_ce": 7.692212597529093
+  },
+  {
+   "selflabel_ce": 5.720553255081176
+  },
+  {
+   "selflabel_ce": 6.558082516988119
+  },
+  {
+   "selflabel_ce": 7.1366579055786135
+  },
+  {
+   "selflabel_ce": 6.498165941238403
+  },
+  {
+   "selflabel_ce": 4.585630067189535
+  },
+  {
+   "selflabel_ce": 3.3840030272801718
+  },
+  {
+   "selflabel_ce": 3.8402222633361816
+  }
+ ],
+ "baseline_selflabel_ce": 1.1616698225339255,
+ "quick": false,
+ "elapsed_seconds": 11.176729202270508,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-20T03:28:15",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

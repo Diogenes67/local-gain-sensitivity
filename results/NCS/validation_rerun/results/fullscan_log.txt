@@ -1,0 +1,50 @@
+mamba-fullscan-rerun-2026-09-25 (estimator survey-v2.3-2026-09-18); device cuda; torch 2.11.0+cu128; transformers 5.16.1
+GPU: NVIDIA A100-SXM4-40GB (42 GB); TF32 matmul=False
+accelerated-scan packages importable: none (reference PyTorch scan)
+  Loading state-spaces/mamba-130m-hf (mamba, float32)...
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 5878.46it/s]
+  24 blocks; 129M params
+model Mamba-130M: 24 blocks; layers [0, 12, 23]; T [4, 8]; 5 inputs; restarts 4, iters 50, tol 1e-06; rows -> /content/drive/MyDrive/hourglass/validation_rerun/fullscan/rows
+  T=4 layer  0 input 0: sigma1 exact 64.204704 est 64.204292 (rel err 6.4e-06, 15 it)  FD(v1) 65.8294  random mean 7.3337  one-step exact max 12.4850  token-local max 61.9989  dA max 1.0000  [2 s]
+  T=4 layer  0 input 1: sigma1 exact 46.383385 est 46.376640 (rel err 1.5e-04, 27 it)  FD(v1) 46.0252  random mean 5.9543  one-step exact max 4.4649  token-local max 46.0016  dA max 1.0000  [2 s]
+  T=4 layer  0 input 2: sigma1 exact 46.830231 est 46.818840 (rel err 2.4e-04, 50 it)  FD(v1) 49.1306  random mean 6.2585  one-step exact max 15.9625  token-local max 44.4322  dA max 1.0000  [2 s]
+  T=4 layer  0 input 3: sigma1 exact 63.934441 est 63.933067 (rel err 2.1e-05, 13 it)  FD(v1) 64.6665  random mean 5.9714  one-step exact max 15.5513  token-local max 61.6354  dA max 1.0000  [2 s]
+  T=4 layer  0 input 4: sigma1 exact 42.969471 est 42.963398 (rel err 1.4e-04, 10 it)  FD(v1) 42.5966  random mean 5.5184  one-step exact max 5.9376  token-local max 42.7124  dA max 1.0000  [2 s]
+  T=4 layer 12 input 0: sigma1 exact 2.031442 est 2.030703 (rel err 3.6e-04, 50 it)  FD(v1) 2.4427  random mean 2.4282  one-step exact max 0.6275  token-local max 2.0284  dA max 1.0000  [2 s]
+  T=4 layer 12 input 1: sigma1 exact 1.977730 est 1.977298 (rel err 2.2e-04, 35 it)  FD(v1) 3.1582  random mean 2.0864  one-step exact max 0.9701  token-local max 1.9109  dA max 1.0000  [2 s]
+  T=4 layer 12 input 2: sigma1 exact 2.217311 est 2.216591 (rel err 3.2e-04, 27 it)  FD(v1) 2.7190  random mean 2.4506  one-step exact max 0.8442  token-local max 1.9560  dA max 1.0000  [2 s]
+  T=4 layer 12 input 3: sigma1 exact 2.260014 est 2.259439 (rel err 2.5e-04, 50 it)  FD(v1) 2.7774  random mean 2.4238  one-step exact max 0.7017  token-local max 2.2345  dA max 1.0000  [2 s]
+  T=4 layer 12 input 4: sigma1 exact 2.623297 est 2.622865 (rel err 1.6e-04, 35 it)  FD(v1) 3.7461  random mean 3.6795  one-step exact max 0.7788  token-local max 2.6100  dA max 1.0000  [2 s]
+  T=4 layer 23 input 0: sigma1 exact 30.064688 est 30.058132 (rel err 2.2e-04, 50 it)  FD(v1) 28.7226  random mean 50.0548  one-step exact max 1.9639  token-local max 30.0355  dA max 1.0000  [2 s]
+  T=4 layer 23 input 1: sigma1 exact 23.529469 est 23.526339 (rel err 1.3e-04, 50 it)  FD(v1) 49.6353  random mean 46.6586  one-step exact max 0.7706  token-local max 23.4869  dA max 1.0000  [3 s]
+  T=4 layer 23 input 2: sigma1 exact 32.512077 est 32.503696 (rel err 2.6e-04, 22 it)  FD(v1) 78.0332  random mean 60.1754  one-step exact max 1.9530  token-local max 32.4467  dA max 1.0000  [2 s]
+  T=4 layer 23 input 3: sigma1 exact 27.910456 est 27.908993 (rel err 5.2e-05, 26 it)  FD(v1) 31.8549  random mean 46.4351  one-step exact max 1.3924  token-local max 27.8765  dA max 1.0000  [2 s]
+  T=4 layer 23 input 4: sigma1 exact 28.912521 est 28.904373 (rel err 2.8e-04, 26 it)  FD(v1) 42.8151  random mean 60.8998  one-step exact max 0.9586  token-local max 28.8896  dA max 1.0000  [2 s]
+  T=8 layer  0 input 0: sigma1 exact 65.999008 est 65.949867 (rel err 7.4e-04, 50 it)  FD(v1) 65.9262  random mean 8.5687  one-step exact max 16.6441  token-local max 65.3279  dA max 1.0000  [7 s]
+  T=8 layer  0 input 1: sigma1 exact 51.685314 est 51.678776 (rel err 1.3e-04, 38 it)  FD(v1) 50.9749  random mean 7.5702  one-step exact max 14.0498  token-local max 49.9963  dA max 1.0000  [7 s]
+  T=8 layer  0 input 2: sigma1 exact 46.938869 est 46.936909 (rel err 4.2e-05, 50 it)  FD(v1) 47.2641  random mean 8.3598  one-step exact max 15.9624  token-local max 44.4320  dA max 1.0000  [7 s]
+  T=8 layer  0 input 3: sigma1 exact 64.851616 est 64.846024 (rel err 8.6e-05, 12 it)  FD(v1) 63.9741  random mean 7.8405  one-step exact max 15.5515  token-local max 61.6363  dA max 1.0000  [7 s]
+  T=8 layer  0 input 4: sigma1 exact 59.549309 est 59.520794 (rel err 4.8e-04, 40 it)  FD(v1) 58.0104  random mean 7.7130  one-step exact max 9.5547  token-local max 59.3958  dA max 1.0000  [7 s]
+  T=8 layer 12 input 0: sigma1 exact 3.706711 est 3.704917 (rel err 4.8e-04, 16 it)  FD(v1) 3.4894  random mean 3.7696  one-step exact max 0.8678  token-local max 3.3161  dA max 1.0000  [7 s]
+  T=8 layer 12 input 1: sigma1 exact 2.575441 est 2.574231 (rel err 4.7e-04, 24 it)  FD(v1) 5.5304  random mean 4.0897  one-step exact max 0.9701  token-local max 2.2177  dA max 1.0000  [7 s]
+  T=8 layer 12 input 2: sigma1 exact 2.823538 est 2.822447 (rel err 3.9e-04, 17 it)  FD(v1) 3.3481  random mean 3.3221  one-step exact max 0.8442  token-local max 2.5457  dA max 1.0000  [7 s]
+  T=8 layer 12 input 3: sigma1 exact 2.267471 est 2.266894 (rel err 2.5e-04, 50 it)  FD(v1) 3.8735  random mean 3.3971  one-step exact max 1.1896  token-local max 2.2345  dA max 1.0000  [8 s]
+  T=8 layer 12 input 4: sigma1 exact 2.624657 est 2.623947 (rel err 2.7e-04, 28 it)  FD(v1) 3.5099  random mean 3.0901  one-step exact max 0.7788  token-local max 2.6100  dA max 1.0000  [7 s]
+  T=8 layer 23 input 0: sigma1 exact 36.994965 est 36.975391 (rel err 5.3e-04, 50 it)  FD(v1) 31.2388  random mean 85.9053  one-step exact max 1.9639  token-local max 36.9753  dA max 1.0000  [8 s]
+  T=8 layer 23 input 1: sigma1 exact 44.634846 est 44.614887 (rel err 4.5e-04, 50 it)  FD(v1) 59.2079  random mean 78.8126  one-step exact max 2.4441  token-local max 44.6024  dA max 1.0000  [8 s]
+  T=8 layer 23 input 2: sigma1 exact 39.120033 est 39.114822 (rel err 1.3e-04, 20 it)  FD(v1) 89.6580  random mean 71.4784  one-step exact max 2.0457  token-local max 39.0634  dA max 1.0000  [7 s]
+  T=8 layer 23 input 3: sigma1 exact 45.629517 est 45.603397 (rel err 5.7e-04, 38 it)  FD(v1) 90.7919  random mean 73.8446  one-step exact max 2.1312  token-local max 45.5560  dA max 1.0000  [7 s]
+  T=8 layer 23 input 4: sigma1 exact 28.911972 est 28.904430 (rel err 2.6e-04, 32 it)  FD(v1) 38.0571  random mean 64.4463  one-step exact max 0.9735  token-local max 28.8896  dA max 1.0000  [7 s]
+total 150 s
+check 1: 30 pairs; relative error median 2.5e-04, max 7.4e-04; Pearson r 1.000000; iterations median 34
+layer   T  n  sigma1 exact  rel err max  FD v1 / random  full / one-step  full / dA
+    0   4  5       52.8644      2.4e-04     8.62 +- 1.20       6.0 +- 2.6         52.9
+    0   8  5       57.8048      7.4e-04     7.15 +- 0.88       4.2 +- 1.1         57.8
+   12   4  5        2.2220      3.6e-04     1.16 +- 0.19       2.9 +- 0.5          2.2
+   12   8  5        2.7996      4.8e-04     1.11 +- 0.14       3.1 +- 0.8          2.8
+   23   4  5       28.5858      2.8e-04     0.86 +- 0.27      22.5 +- 6.6         28.6
+   23   8  5       39.0583      5.7e-04     0.84 +- 0.35      21.5 +- 4.3         39.1
+summary saved /content/drive/MyDrive/hourglass/validation_rerun/fullscan/fullscan_summary.json
+figure saved /content/drive/MyDrive/hourglass/validation_rerun/fullscan/edfig1_rerun.png
+export: /content/drive/MyDrive/hourglass/validation_rerun/mamba_fullscan_results.zip (0.25 MB)
+export: /content/mamba_fullscan_results.zip (0.25 MB)

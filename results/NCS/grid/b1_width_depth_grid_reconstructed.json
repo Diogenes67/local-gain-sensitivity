@@ -1,0 +1,1244 @@
+{
+ "experiment": "B1_width_depth_grid",
+ "provenance": "Reconstructed 15 Sept 2026 from the cell output of Colab notebook Untitled132.ipynb (Drive id 15aqPfWHSEqb4oqDpxHUIJv9PTgwoHowk, run 30-31 March 2026, b1_width_depth_grid.py). The notebook wrote results/b1_width_depth_grid.json to the Colab local disk, which was not kept; per-layer sigma1 profiles were not printed and are not recoverable. Estimator: token-local layer Jacobian at position T/2, JtJ power iteration (torch.func.jvp + vjp), 16 probes x 50 iterations at the final checkpoint (8 x 30 at intermediate checkpoints), 5 inputs (3 intermediate), float32. R_ex0 = thirds rule over layers 1..L-1; hourglass = R_ex0 < 0.80. Training: WikiText-103, 899,728 sequences x 128 tokens, AdamW 3e-4, wd 0.01, batch 32, 20,000 steps, seeds 42 and 137. The 14-run follow-up (b1_grid_followup.py: w=768 column, extra seeds for d6xw1024 and d24xw512, two low-LR d24xw1024 runs) is not in Drive; only its three 'extra seed' additions (Untitled186) are recorded here.",
+ "results": [
+  {
+   "n_layers": 6,
+   "d_model": 256,
+   "seed": 42,
+   "params_M": 30.5,
+   "n_heads": 8,
+   "final_R_ex0": 1.2544,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.611,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.2069,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.2951,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.3119,
+     "hourglass": false,
+     "train_loss": 5.9725
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.4148,
+     "hourglass": false,
+     "train_loss": 5.4806
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.505,
+     "hourglass": false,
+     "train_loss": 5.4618
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.3196,
+     "hourglass": false,
+     "train_loss": 4.9027
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.4553,
+     "hourglass": false,
+     "train_loss": 4.8476
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.4187,
+     "hourglass": false,
+     "train_loss": 4.7757
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.4158,
+     "hourglass": false,
+     "train_loss": 4.7163
+    }
+   ]
+  },
+  {
+   "n_layers": 6,
+   "d_model": 256,
+   "seed": 137,
+   "params_M": 30.5,
+   "n_heads": 8,
+   "final_R_ex0": 1.3035,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.4448,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.3262,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.279,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.4091,
+     "hourglass": false,
+     "train_loss": 5.9581
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.453,
+     "hourglass": false,
+     "train_loss": 5.3163
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.1997,
+     "hourglass": false,
+     "train_loss": 4.9234
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.2174,
+     "hourglass": false,
+     "train_loss": 4.7527
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.3666,
+     "hourglass": false,
+     "train_loss": 5.0783
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.2231,
+     "hourglass": false,
+     "train_loss": 4.6777
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.3633,
+     "hourglass": false,
+     "train_loss": 4.6368
+    }
+   ]
+  },
+  {
+   "n_layers": 6,
+   "d_model": 512,
+   "seed": 42,
+   "params_M": 70.4,
+   "n_heads": 8,
+   "final_R_ex0": 1.1647,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.3976,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.2045,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.2658,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.1596,
+     "hourglass": false,
+     "train_loss": 5.3968
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.1183,
+     "hourglass": false,
+     "train_loss": 5.0597
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.195,
+     "hourglass": false,
+     "train_loss": 5.0106
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.0159,
+     "hourglass": false,
+     "train_loss": 4.8302
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.0379,
+     "hourglass": false,
+     "train_loss": 4.7072
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.9937,
+     "hourglass": false,
+     "train_loss": 4.5498
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.9883,
+     "hourglass": false,
+     "train_loss": 4.5007
+    }
+   ]
+  },
+  {
+   "n_layers": 6,
+   "d_model": 512,
+   "seed": 137,
+   "params_M": 70.4,
+   "n_heads": 8,
+   "final_R_ex0": 1.1449,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.3007,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.9959,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.1398,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.2794,
+     "hourglass": false,
+     "train_loss": 5.3619
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.251,
+     "hourglass": false,
+     "train_loss": 5.3777
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.2731,
+     "hourglass": false,
+     "train_loss": 4.9464
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.0964,
+     "hourglass": false,
+     "train_loss": 4.7862
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.1087,
+     "hourglass": false,
+     "train_loss": 4.4646
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.1996,
+     "hourglass": false,
+     "train_loss": 4.472
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.0745,
+     "hourglass": false,
+     "train_loss": 4.2392
+    }
+   ]
+  },
+  {
+   "n_layers": 6,
+   "d_model": 1024,
+   "seed": 42,
+   "params_M": 178.6,
+   "n_heads": 8,
+   "final_R_ex0": 0.8245,
+   "final_hourglass": false,
+   "crossing_step": 1000,
+   "final_train_loss": 3.9454,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.8803,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.7145,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.7498,
+     "hourglass": true,
+     "train_loss": 5.4752
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.7454,
+     "hourglass": true,
+     "train_loss": 4.6243
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.6854,
+     "hourglass": true,
+     "train_loss": 4.6569
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.7501,
+     "hourglass": true,
+     "train_loss": 4.4719
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.8665,
+     "hourglass": false,
+     "train_loss": 4.5559
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.7684,
+     "hourglass": true,
+     "train_loss": 4.2997
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.8193,
+     "hourglass": false,
+     "train_loss": 4.3409
+    }
+   ]
+  },
+  {
+   "n_layers": 6,
+   "d_model": 1024,
+   "seed": 137,
+   "params_M": 178.6,
+   "n_heads": 8,
+   "final_R_ex0": 0.9972,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.424,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.049,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.9943,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.8651,
+     "hourglass": false,
+     "train_loss": 5.4297
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.8906,
+     "hourglass": false,
+     "train_loss": 4.8691
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.0049,
+     "hourglass": false,
+     "train_loss": 4.8228
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.1716,
+     "hourglass": false,
+     "train_loss": 3.9277
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.9592,
+     "hourglass": false,
+     "train_loss": 4.7052
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.9553,
+     "hourglass": false,
+     "train_loss": 4.443
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.0719,
+     "hourglass": false,
+     "train_loss": 4.4167
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 256,
+   "seed": 42,
+   "params_M": 35.2,
+   "n_heads": 8,
+   "final_R_ex0": 1.5498,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.5897,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.1163,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.1855,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.2928,
+     "hourglass": false,
+     "train_loss": 5.8683
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.6116,
+     "hourglass": false,
+     "train_loss": 5.279
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.5269,
+     "hourglass": false,
+     "train_loss": 5.085
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.5055,
+     "hourglass": false,
+     "train_loss": 5.0778
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.4382,
+     "hourglass": false,
+     "train_loss": 4.4282
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.4216,
+     "hourglass": false,
+     "train_loss": 4.381
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.4235,
+     "hourglass": false,
+     "train_loss": 4.615
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 256,
+   "seed": 137,
+   "params_M": 35.2,
+   "n_heads": 8,
+   "final_R_ex0": 1.3177,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.5171,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 1.0502,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 1.1408,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.3968,
+     "hourglass": false,
+     "train_loss": 6.0155
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.3662,
+     "hourglass": false,
+     "train_loss": 5.3797
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.3594,
+     "hourglass": false,
+     "train_loss": 4.9937
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.3752,
+     "hourglass": false,
+     "train_loss": 5.0426
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.4001,
+     "hourglass": false,
+     "train_loss": 4.6604
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.3257,
+     "hourglass": false,
+     "train_loss": 4.5577
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.4416,
+     "hourglass": false,
+     "train_loss": 4.5713
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 512,
+   "seed": 42,
+   "params_M": 89.4,
+   "n_heads": 8,
+   "final_R_ex0": 1.0094,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.1789,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.9595,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.9091,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.9419,
+     "hourglass": false,
+     "train_loss": 5.6265
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.9907,
+     "hourglass": false,
+     "train_loss": 5.3332
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.9718,
+     "hourglass": false,
+     "train_loss": 4.8139
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.0101,
+     "hourglass": false,
+     "train_loss": 4.5255
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.0067,
+     "hourglass": false,
+     "train_loss": 4.6138
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.9685,
+     "hourglass": false,
+     "train_loss": 4.6872
+    },
+    {
+     "step": 16000,
+     "R_ex0": 1.0086,
+     "hourglass": false,
+     "train_loss": 4.2889
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 512,
+   "seed": 137,
+   "params_M": 89.4,
+   "n_heads": 8,
+   "final_R_ex0": 1.1158,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.0461,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.9678,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.9961,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 1.0602,
+     "hourglass": false,
+     "train_loss": 5.4922
+    },
+    {
+     "step": 4000,
+     "R_ex0": 1.0662,
+     "hourglass": false,
+     "train_loss": 4.909
+    },
+    {
+     "step": 6000,
+     "R_ex0": 1.0931,
+     "hourglass": false,
+     "train_loss": 4.6121
+    },
+    {
+     "step": 8000,
+     "R_ex0": 1.1954,
+     "hourglass": false,
+     "train_loss": 4.7655
+    },
+    {
+     "step": 10000,
+     "R_ex0": 1.0837,
+     "hourglass": false,
+     "train_loss": 4.4106
+    },
+    {
+     "step": 12000,
+     "R_ex0": 1.0511,
+     "hourglass": false,
+     "train_loss": 4.3114
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.9525,
+     "hourglass": false,
+     "train_loss": 4.2374
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 1024,
+   "seed": 42,
+   "params_M": 254.2,
+   "n_heads": 8,
+   "final_R_ex0": 0.584,
+   "final_hourglass": true,
+   "crossing_step": 500,
+   "final_train_loss": 4.1324,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.5783,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.4536,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.3819,
+     "hourglass": true,
+     "train_loss": 5.5392
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.3803,
+     "hourglass": true,
+     "train_loss": 5.2951
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.393,
+     "hourglass": true,
+     "train_loss": 5.0215
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.4214,
+     "hourglass": true,
+     "train_loss": 4.9083
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.5599,
+     "hourglass": true,
+     "train_loss": 4.8391
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.4751,
+     "hourglass": true,
+     "train_loss": 4.511
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.5476,
+     "hourglass": true,
+     "train_loss": 4.5659
+    }
+   ]
+  },
+  {
+   "n_layers": 12,
+   "d_model": 1024,
+   "seed": 137,
+   "params_M": 254.2,
+   "n_heads": 8,
+   "final_R_ex0": 0.5748,
+   "final_hourglass": true,
+   "crossing_step": 500,
+   "final_train_loss": 4.0349,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.5985,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.4371,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.4363,
+     "hourglass": true,
+     "train_loss": 5.65
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.4506,
+     "hourglass": true,
+     "train_loss": 5.2381
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.4509,
+     "hourglass": true,
+     "train_loss": 4.9514
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.3753,
+     "hourglass": true,
+     "train_loss": 4.9646
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.4812,
+     "hourglass": true,
+     "train_loss": 4.4332
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.4518,
+     "hourglass": true,
+     "train_loss": 4.4878
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.6015,
+     "hourglass": true,
+     "train_loss": 4.3646
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 256,
+   "seed": 42,
+   "params_M": 44.7,
+   "n_heads": 8,
+   "final_R_ex0": 0.9402,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.6246,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.9749,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.9739,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.9501,
+     "hourglass": false,
+     "train_loss": 5.7963
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.9078,
+     "hourglass": false,
+     "train_loss": 4.8999
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.9411,
+     "hourglass": false,
+     "train_loss": 4.9618
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.9391,
+     "hourglass": false,
+     "train_loss": 4.8897
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.9759,
+     "hourglass": false,
+     "train_loss": 4.7497
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.9578,
+     "hourglass": false,
+     "train_loss": 4.9092
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.9852,
+     "hourglass": false,
+     "train_loss": 4.5887
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 256,
+   "seed": 137,
+   "params_M": 44.7,
+   "n_heads": 8,
+   "final_R_ex0": 0.8907,
+   "final_hourglass": false,
+   "crossing_step": null,
+   "final_train_loss": 4.2409,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.9471,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.9388,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.931,
+     "hourglass": false,
+     "train_loss": 5.7589
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.8907,
+     "hourglass": false,
+     "train_loss": 5.1688
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.9099,
+     "hourglass": false,
+     "train_loss": 4.9332
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.9147,
+     "hourglass": false,
+     "train_loss": 4.6582
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.8848,
+     "hourglass": false,
+     "train_loss": 4.4423
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.8847,
+     "hourglass": false,
+     "train_loss": 4.6087
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.8436,
+     "hourglass": false,
+     "train_loss": 4.6031
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 512,
+   "seed": 42,
+   "params_M": 127.2,
+   "n_heads": 8,
+   "final_R_ex0": 0.8077,
+   "final_hourglass": false,
+   "crossing_step": 2000,
+   "final_train_loss": 3.9388,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.819,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.8255,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.7574,
+     "hourglass": true,
+     "train_loss": 5.7822
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.7109,
+     "hourglass": true,
+     "train_loss": 4.9463
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.7127,
+     "hourglass": true,
+     "train_loss": 5.1726
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.7596,
+     "hourglass": true,
+     "train_loss": 4.6983
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.7311,
+     "hourglass": true,
+     "train_loss": 4.3244
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.7592,
+     "hourglass": true,
+     "train_loss": 4.4977
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.8103,
+     "hourglass": false,
+     "train_loss": 3.9597
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 512,
+   "seed": 137,
+   "params_M": 127.2,
+   "n_heads": 8,
+   "final_R_ex0": 0.8215,
+   "final_hourglass": false,
+   "crossing_step": 1000,
+   "final_train_loss": 4.0873,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.8298,
+     "hourglass": false,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.779,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.7175,
+     "hourglass": true,
+     "train_loss": 5.6785
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.6985,
+     "hourglass": true,
+     "train_loss": 5.2888
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.747,
+     "hourglass": true,
+     "train_loss": 4.9888
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.7685,
+     "hourglass": true,
+     "train_loss": 4.6944
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.7963,
+     "hourglass": true,
+     "train_loss": 4.4659
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.8025,
+     "hourglass": false,
+     "train_loss": 4.2194
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.7664,
+     "hourglass": true,
+     "train_loss": 3.8866
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 1024,
+   "seed": 42,
+   "params_M": 405.4,
+   "n_heads": 8,
+   "final_R_ex0": 0.4214,
+   "final_hourglass": true,
+   "crossing_step": 500,
+   "final_train_loss": 6.222,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.6424,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.5909,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.4897,
+     "hourglass": true,
+     "train_loss": 5.6697
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.4566,
+     "hourglass": true,
+     "train_loss": 5.4933
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.5705,
+     "hourglass": true,
+     "train_loss": 5.5031
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.218,
+     "hourglass": true,
+     "train_loss": 5.3083
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.4234,
+     "hourglass": true,
+     "train_loss": 5.8331
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.5833,
+     "hourglass": true,
+     "train_loss": 6.1275
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.544,
+     "hourglass": true,
+     "train_loss": 5.7278
+    }
+   ]
+  },
+  {
+   "n_layers": 24,
+   "d_model": 1024,
+   "seed": 137,
+   "params_M": 405.4,
+   "n_heads": 8,
+   "final_R_ex0": 0.4711,
+   "final_hourglass": true,
+   "crossing_step": 500,
+   "final_train_loss": 6.0497,
+   "trajectory": [
+    {
+     "step": 500,
+     "R_ex0": 0.628,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 1000,
+     "R_ex0": 0.5543,
+     "hourglass": true,
+     "train_loss": null
+    },
+    {
+     "step": 2000,
+     "R_ex0": 0.4085,
+     "hourglass": true,
+     "train_loss": 5.9364
+    },
+    {
+     "step": 4000,
+     "R_ex0": 0.3793,
+     "hourglass": true,
+     "train_loss": 5.5164
+    },
+    {
+     "step": 6000,
+     "R_ex0": 0.4454,
+     "hourglass": true,
+     "train_loss": 5.5465
+    },
+    {
+     "step": 8000,
+     "R_ex0": 0.3883,
+     "hourglass": true,
+     "train_loss": 5.7621
+    },
+    {
+     "step": 10000,
+     "R_ex0": 0.3676,
+     "hourglass": true,
+     "train_loss": 5.9509
+    },
+    {
+     "step": 12000,
+     "R_ex0": 0.43,
+     "hourglass": true,
+     "train_loss": 6.1463
+    },
+    {
+     "step": 16000,
+     "R_ex0": 0.4833,
+     "hourglass": true,
+     "train_loss": 6.1673
+    }
+   ]
+  }
+ ],
+ "extra_seeds_april": [
+  {
+   "n_layers": 24,
+   "d_model": 768,
+   "seed": 2042,
+   "final_R_ex0": 0.8232,
+   "final_hourglass": false,
+   "R_ex0_at_10k": 0.7795,
+   "final_train_loss": 1.8379,
+   "source": "Untitled186 cell 3 (b1_extra_seeds.py, 21 Apr 2026); data 100,657 sequences; bf16 training"
+  },
+  {
+   "n_layers": 24,
+   "d_model": 1024,
+   "seed": 2042,
+   "final_R_ex0": 0.5968,
+   "final_hourglass": true,
+   "R_ex0_at_10k": 0.5583,
+   "final_train_loss": 2.4242,
+   "source": "Untitled186 cell 4 (b1_extra_seeds.py, 22 Apr 2026); data 100,657 sequences; bf16 training"
+  },
+  {
+   "n_layers": 12,
+   "d_model": 768,
+   "seed": 2042,
+   "final_R_ex0": 0.9743,
+   "final_hourglass": false,
+   "R_ex0_at_10k": 0.9375,
+   "final_train_loss": 2.0598,
+   "source": "Untitled186 cell 4 (b1_extra_seeds.py, 22 Apr 2026); data 100,657 sequences; bf16 training"
+  }
+ ]
+}

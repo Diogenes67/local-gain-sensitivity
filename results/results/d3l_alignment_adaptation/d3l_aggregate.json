@@ -1,0 +1,84 @@
+{
+  "experiment": "d3l_alignment_adaptation",
+  "description": "Fine-tune downstream layers (6-11) to accept fixed orthogonal rotation at waist layer 5. Pre-registered thresholds: >70% recovery = alignment sensitivity, <30% = genuine computation destruction.",
+  "k_value": 8,
+  "n_seeds": 5,
+  "n_layers": 12,
+  "d_model": 512,
+  "target_layer": 5,
+  "adaptation_steps": 500,
+  "per_seed": {
+    "seed0": {
+      "clean_nll_before": 4.0806,
+      "dL_waist_before": 4.9393,
+      "dL_target_before": 5.0659,
+      "clean_nll_after": 4.1620,
+      "dL_waist_after": 5.0053,
+      "dL_target_after": 0.5299,
+      "control_dL_waist": 4.9905,
+      "control_dL_target": 5.1260,
+      "reduction_pct": 89.5
+    },
+    "seed1": {
+      "clean_nll_before": 3.9579,
+      "dL_waist_before": 5.3063,
+      "dL_target_before": 5.2025,
+      "clean_nll_after": 4.0568,
+      "dL_waist_after": 5.3939,
+      "dL_target_after": 0.5261,
+      "control_dL_waist": 5.3597,
+      "control_dL_target": 5.2531,
+      "reduction_pct": 89.9
+    },
+    "seed2": {
+      "clean_nll_before": 4.0909,
+      "dL_waist_before": 5.2059,
+      "dL_target_before": 5.3780,
+      "clean_nll_after": 4.1840,
+      "dL_waist_after": 5.1938,
+      "dL_target_after": 0.5101,
+      "control_dL_waist": 5.2799,
+      "control_dL_target": 5.4037,
+      "reduction_pct": 90.5
+    },
+    "seed3": {
+      "clean_nll_before": 4.0452,
+      "dL_waist_before": 5.0558,
+      "dL_target_before": 5.2126,
+      "clean_nll_after": 4.1290,
+      "dL_waist_after": 5.1431,
+      "dL_target_after": 0.5356,
+      "control_dL_waist": 5.0700,
+      "control_dL_target": 5.2756,
+      "reduction_pct": 89.7
+    },
+    "seed4": {
+      "clean_nll_before": 4.1202,
+      "dL_waist_before": 4.9035,
+      "dL_target_before": 5.2426,
+      "clean_nll_after": 4.2011,
+      "dL_waist_after": 4.9975,
+      "dL_target_after": 0.5034,
+      "control_dL_waist": 4.9572,
+      "control_dL_target": 5.3087,
+      "reduction_pct": 90.4
+    }
+  },
+  "aggregate": {
+    "mean_reduction_pct": 90.0,
+    "std_reduction_pct": 0.4,
+    "min_reduction_pct": 89.5,
+    "max_reduction_pct": 90.5,
+    "mean_dL_target_before": 5.1803,
+    "mean_dL_target_after": 0.5210,
+    "mean_residual_dL": 0.5210,
+    "mean_clean_nll_change": 0.0793
+  },
+  "controls": {
+    "description": "Fine-tuning downstream layers WITHOUT rotation (same number of steps). Control ΔL_target should remain high, confirming that the ΔL reduction is specific to the rotation, not generic drift.",
+    "mean_control_dL_target": 5.2734,
+    "mean_control_dL_waist": 5.1315
+  },
+  "interpretation": "90% recovery far exceeds the pre-registered 70% threshold. Downstream layers can almost fully compensate for the orthogonal rotation in 500 steps, confirming that scrambling damage is primarily about learned basis alignment rather than genuine computation destruction. The ~10% residual may reflect genuinely direction-sensitive computation. Controls confirm this is rotation-specific: fine-tuning without rotation does not reduce ΔL_target.",
+  "verdict": "CONFIRMED: scrambling measures alignment sensitivity, not functional necessity"
+}

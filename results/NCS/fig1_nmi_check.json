@@ -1,0 +1,50 @@
+{
+ "n": 210,
+ "pearson_r": 0.9999999976188405,
+ "max_rel_err_printed": 0.0004793863854265501,
+ "median_rel_err_printed": 1.9918409181141072e-05,
+ "max_rel_err_summary_lines": {
+  "ConvNeXt-tiny": {
+   "sigma1_max_rel_err": 9.36e-05,
+   "pearson_r": 1.0,
+   "rho_max_rel_err": 0.0821
+  },
+  "ConvNeXt-base": {
+   "sigma1_max_rel_err": 0.000121,
+   "pearson_r": 1.0,
+   "rho_max_rel_err": 0.111
+  },
+  "Mamba-130M": {
+   "sigma1_max_rel_err": 0.000101,
+   "pearson_r": 1.0,
+   "rho_max_rel_err": 0.09
+  }
+ },
+ "estimators": {
+  "est": {
+   "median": 1.0,
+   "min": 0.9995206136145734,
+   "max": 1.000050393065914
+  },
+  "branch": {
+   "median": 0.9904898550724638,
+   "min": 0.7896090534979424,
+   "max": 1.0662949194547708
+  },
+  "rho": {
+   "median": 0.35469524556746196,
+   "min": 0.039861949956859356,
+   "max": 0.6959703947368421
+  },
+  "probe": {
+   "median": 0.22826159032330584,
+   "min": 0.08168194929762436,
+   "max": 0.5592315901814301
+  }
+ },
+ "probe_underestimate_pct": [
+  44.07684098185699,
+  91.83180507023756
+ ],
+ "branch_abs_diff_max": 0.5179999999999998
+}

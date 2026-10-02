@@ -1,0 +1,117 @@
+{
+ "hf_id": "google-t5/t5-base",
+ "arch": "t5",
+ "family": "Encoder-decoder",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 220,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 2.698251255353292,
+ "delta_L_profile": [
+  2.7212349494298302,
+  0.07723933060963972,
+  0.027663397789001287,
+  0.0335441271464032,
+  0.06431368192036935,
+  0.021735564867655377,
+  -0.02077418168385803,
+  0.05697875022888166,
+  0.05244933764139814,
+  0.09317010243733748,
+  0.07995274861653634,
+  0.1765794674555461
+ ],
+ "delta_L_ci": [
+  [
+   2.660539057056109,
+   2.7699684834480283
+  ],
+  [
+   0.06400893449783308,
+   0.08879178225994111
+  ],
+  [
+   0.020087509950002302,
+   0.03490511337916054
+  ],
+  [
+   0.020804527203242208,
+   0.045650681853294586
+  ],
+  [
+   0.05422296901543918,
+   0.07371000409126288
+  ],
+  [
+   0.008218843936920272,
+   0.034373570879300326
+  ],
+  [
+   -0.03249002635479005,
+   -0.010267791748046873
+  ],
+  [
+   0.043543940782546996,
+   0.07182276050249732
+  ],
+  [
+   0.04396539231141422,
+   0.0609884240229925
+  ],
+  [
+   0.07910985072453794,
+   0.10623783747355116
+  ],
+  [
+   0.0673140402634938,
+   0.0931654822826387
+  ],
+  [
+   0.16077018499374413,
+   0.1899492414792377
+  ]
+ ],
+ "kl_profile": [
+  3.6074947198232015,
+  0.2837852011124293,
+  0.10059355994065602,
+  0.2534268910686175,
+  0.22712898800770442,
+  0.16289181932806968,
+  0.17361474906404814,
+  0.2503146524230639,
+  0.15966145272056262,
+  0.26527165472507475,
+  0.2086996148029963,
+  0.5096004029115041
+ ],
+ "baseline_kl": 0.0,
+ "readout": "span-corruption (denoising) cross-entropy over target tokens, WikiText-103 validation, 128-token windows, 15% noise, mean span 3, fixed spans; encoder scrambled, decoder untouched",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "layer.0.SelfAttention",
+  "layer.1.DenseReluDense"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 16,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 0.07723933060963972,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "quick": false,
+ "elapsed_seconds": 16.878910779953003,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-20T03:28:15",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

@@ -1,0 +1,12 @@
+matched perturbation | {'torch': '2.14.0+cu130', 'python': '3.11.15', 'date': '2026-09-20T03:42:05', 'device': 'cpu'} | out=/tmp/mtest
+/usr/local/lib/python3.11/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+    block  0: sigma1 1.244  gain(v1, eps=0.01) 1.244  gain(rand) 1.011  KLseq(v1) eps 0.1 2.67e-05 eps 1 1.24e-03  dCE(v1) eps 0.1 +5.89e-05  rand +2.43e-05
+    block  6: sigma1 1.221  gain(v1, eps=0.01) 1.221  gain(rand) 1.009  KLseq(v1) eps 0.1 2.62e-05 eps 1 1.21e-03  dCE(v1) eps 0.1 +4.30e-05  rand +2.64e-05
+    block 11: sigma1 1.205  gain(v1, eps=0.01) 1.205  gain(rand) 1.011  KLseq(v1) eps 0.1 2.68e-05 eps 1 1.24e-03  dCE(v1) eps 0.1 +4.27e-05  rand +3.04e-05
+  d1: gain along v1 at eps 0.01 / sigma1 = 1.0000 (expect ~1); gain(rand)/sigma1 = 0.826 (expect < 1)
+    block  0: sigma1 1.229  gain(v1, eps=0.01) 1.229  gain(rand) 1.008  KLseq(v1) eps 0.1 1.86e-05 eps 1 8.81e-04  dCE(v1) eps 0.1 -3.58e-06  rand -6.59e-06
+    block  6: sigma1 1.215  gain(v1, eps=0.01) 1.215  gain(rand) 1.008  KLseq(v1) eps 0.1 1.85e-05 eps 1 8.89e-04  dCE(v1) eps 0.1 -2.98e-06  rand -2.12e-06
+    block 11: sigma1 1.213  gain(v1, eps=0.01) 1.213  gain(rand) 1.008  KLseq(v1) eps 0.1 1.89e-05 eps 1 8.83e-04  dCE(v1) eps 0.1 -1.91e-06  rand -4.77e-07
+  bidir: gain along v1 at eps 0.01 / sigma1 = 1.0000 (expect ~1); gain(rand)/sigma1 = 0.827 (expect < 1)
+    block  0: sigma1 25.185  gain(v1, eps=0.01) 25.176  gain(rand) 5.834  KLseq(v1) eps 0.1 2.94e-05 eps 1 8.48e-04  dCE(v1) eps 0.1 +2.29e-05  rand +1.73e-05

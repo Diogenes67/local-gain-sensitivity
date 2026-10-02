@@ -1,0 +1,21 @@
+model              L   g/s1  h ratio  rho rel  rho abs KLt v1/rnd (s1/gr)^2  excess     >1
+Pythia-1.4B       24  0.958      6.6    +0.54    +0.52       18.0      9.29    1.91  19/22
+Pythia-410M       24  0.997      4.1    -0.23    -0.32       11.7     10.14    1.16  13/22
+Qwen2.5-1.5B      28  0.997     12.4    -0.04    +0.71       20.0     19.71    1.18  14/26
+Gemma-2-2B        26  0.996      7.0    -0.48    +0.60       21.1     18.62    0.98  11/24
+GPT-2 124M        12  0.988      3.0    +0.33    +0.33       24.8     13.10    2.03   9/10
+Llama-3.2-1B      16  1.003      8.1    -0.19    +0.77       32.2     25.92    1.08   9/14
+y_abs: pooled slope +2.12 (cluster s.e. 0.73; with per-model depth trends +0.85 +/- 0.72) | L1O R2 0.24 vs depth 0.08 | leave-one-family-out 0.32 vs 0.02
+y_rel: pooled slope +1.89 (cluster s.e. 0.99; with per-model depth trends +0.88 +/- 0.66) | L1O R2 -0.01 vs depth -0.02 | leave-one-family-out 0.24 vs 0.03
+Pythia-1.4B      pred/meas 1.000 | local^2 22.47 x after 1.05 x align 1.05 (total amp 23.7; recon 1.00) | after>1 56% | rho(s1, after_v1) +0.31
+Pythia-410M      pred/meas 1.000 | local^2 14.18 x after 0.61 x align 1.01 (total amp 8.6; recon 0.99) | after>1 34% | rho(s1, after_v1) -0.52
+Qwen2.5-1.5B     pred/meas 1.001 | local^2 23.87 x after 0.64 x align 0.96 (total amp 15.2; recon 0.99) | after>1 33% | rho(s1, after_v1) +0.37
+Gemma-2-2B       pred/meas 1.001 | local^2 26.03 x after 0.62 x align 0.76 (total amp 16.2; recon 0.97) | after>1 32% | rho(s1, after_v1) -0.31
+GPT-2 124M       pred/meas 1.000 | local^2 30.73 x after 0.37 x align 0.21 (total amp 11.2; recon 0.12) | after>1 33% | rho(s1, after_v1) -0.35
+Llama-3.2-1B     pred/meas 1.001 | local^2 37.26 x after 0.87 x align 0.89 (total amp 32.3; recon 0.96) | after>1 40% | rho(s1, after_v1) +0.29
+Pythia-1.4B    rho_rel +0.54 [+0.41,+0.66]  rho_abs +0.52 [+0.39,+0.64] | local^2 22.5 x after 1.05 x align 1.05 = 25.0; measured 28.6; after>1 56%
+Pythia-410M    rho_rel -0.23 [-0.42,-0.02]  rho_abs -0.32 [-0.42,-0.16] | local^2 14.2 x after 0.61 x align 1.01 = 8.7; measured 8.8; after>1 34%
+Qwen2.5-1.5B   rho_rel -0.04 [-0.34,+0.24]  rho_abs +0.71 [+0.57,+0.79] | local^2 23.9 x after 0.64 x align 0.99 = 15.0; measured 1.0; after>1 33%
+Gemma-2-2B     rho_rel -0.48 [-0.56,-0.37]  rho_abs +0.60 [+0.44,+0.71] | local^2 26.0 x after 0.62 x align 0.92 = 14.9; measured 5.7; after>1 32%
+GPT-2 124M     rho_rel +0.33 [+0.24,+0.49]  rho_abs +0.33 [+0.11,+0.41] | local^2 30.7 x after 0.37 x align 1.64 = 18.4; measured 2.0; after>1 33%
+Llama-3.2-1B   rho_rel -0.19 [-0.70,+0.13]  rho_abs +0.77 [+0.50,+0.77] | local^2 37.3 x after 0.87 x align 0.96 = 30.9; measured 31.2; after>1 40%

@@ -1,0 +1,19 @@
+{
+  "model": "Pythia-410m",
+  "hf_id": "EleutherAI/pythia-410m",
+  "n_layers": 24,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 102GB",
+  "dtype": "float32",
+  "checkpoints_profiled": [0, 512, 2000, 8000, 32000, 64000, 100000, 143000],
+  "results": [
+    {"step": 0,      "val_loss": 11.086, "R_ex0": 0.897, "spectral_contrast_C": 0.148, "dL_waist": -0.0358},
+    {"step": 512,    "val_loss": 7.901,  "R_ex0": 0.823, "spectral_contrast_C": 0.221, "dL_waist": 1.6947},
+    {"step": 2000,   "val_loss": 5.896,  "R_ex0": 0.927, "spectral_contrast_C": 0.195, "dL_waist": 4.5116},
+    {"step": 8000,   "val_loss": 5.344,  "R_ex0": 0.925, "spectral_contrast_C": 0.150, "dL_waist": 5.8618},
+    {"step": 32000,  "val_loss": 5.044,  "R_ex0": 0.963, "spectral_contrast_C": 0.097, "dL_waist": 7.0807},
+    {"step": 64000,  "val_loss": 4.987,  "R_ex0": 0.959, "spectral_contrast_C": 0.130, "dL_waist": 7.2929},
+    {"step": 100000, "val_loss": 4.944,  "R_ex0": 0.848, "spectral_contrast_C": 0.262, "dL_waist": 7.1601},
+    {"step": 143000, "val_loss": 4.848,  "R_ex0": 0.821, "spectral_contrast_C": 0.307, "dL_waist": 7.2291}
+  ],
+  "note": "Reconstructed from terminal output"
+}

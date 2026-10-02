@@ -1,0 +1,156 @@
+{
+ "hf_id": "google/vit-base-patch16-224",
+ "arch": "vit",
+ "family": "Vision supervised",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 86,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 0.0,
+ "delta_L_profile": [
+  4.801544189453125,
+  4.144872395197551,
+  1.9800897598266602,
+  1.2803200642267862,
+  1.0407421549161275,
+  3.459178407986959,
+  1.3625550866127014,
+  0.8303518672784169,
+  1.1133605062961578,
+  1.3601213177045186,
+  1.78752814133962,
+  2.4366355538368225
+ ],
+ "delta_L_ci": [
+  [
+   4.633418571949005,
+   5.044048724571864
+  ],
+  [
+   3.9374981639782587,
+   4.338735120097796
+  ],
+  [
+   1.818911987245083,
+   2.1832013766964278
+  ],
+  [
+   1.1696972778936228,
+   1.4308789685865244
+  ],
+  [
+   0.9513286405305068,
+   1.121420661509037
+  ],
+  [
+   3.2291431190570195,
+   3.6603633652130765
+  ],
+  [
+   1.2718731009960176,
+   1.4736310563484827
+  ],
+  [
+   0.7439974817136924,
+   0.9304857961833477
+  ],
+  [
+   1.0098589695990086,
+   1.211293711711963
+  ],
+  [
+   1.2718702791134517,
+   1.4778457249204318
+  ],
+  [
+   1.6851653209328652,
+   1.894938801129659
+  ],
+  [
+   2.288571172853311,
+   2.5735909422238668
+  ]
+ ],
+ "kl_profile": [
+  4.801544189453125,
+  4.144872395197551,
+  1.9800897598266602,
+  1.2803200642267862,
+  1.0407421549161275,
+  3.459178407986959,
+  1.3625550866127014,
+  0.8303518672784169,
+  1.1133605062961578,
+  1.3601213177045186,
+  1.78752814133962,
+  2.4366355538368225
+ ],
+ "baseline_kl": 0.0,
+ "readout": "KL(clean || scrambled) over the ImageNet-1k head on CIFAR-100 test images (primary); self-label cross-entropy alongside",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "attention",
+  "mlp"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 16,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 4.144872395197551,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "vision_extra": [
+  {
+   "selflabel_ce": 7.863111352920532
+  },
+  {
+   "selflabel_ce": 6.745759916305542
+  },
+  {
+   "selflabel_ce": 3.8437695503234863
+  },
+  {
+   "selflabel_ce": 2.964573947588603
+  },
+  {
+   "selflabel_ce": 2.7625504891077677
+  },
+  {
+   "selflabel_ce": 6.279095347722372
+  },
+  {
+   "selflabel_ce": 3.2763039191563923
+  },
+  {
+   "selflabel_ce": 2.4708675821622212
+  },
+  {
+   "selflabel_ce": 3.002919149398804
+  },
+  {
+   "selflabel_ce": 3.420570715268453
+  },
+  {
+   "selflabel_ce": 4.050750120480855
+  },
+  {
+   "selflabel_ce": 4.970284795761108
+  }
+ ],
+ "baseline_selflabel_ce": 1.1488795181115468,
+ "quick": false,
+ "elapsed_seconds": 704.8868556022644,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-20T03:28:15",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

@@ -1,0 +1,105 @@
+census v4 | {'torch': '2.14.0+cu130', 'transformers': '5.17.0', 'python': '3.11.15', 'date': '2026-09-20T03:24:51', 'device': 'cpu', 'timm': '1.0.29'} | out=/tmp/c4test/results | batches=2
+
+------------------------------------------------------------------------------
+tiny/bert (bert, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['attention.output.dense', 'output.dense']
+  Baseline loss: 4.8373
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = +0.0005
+    L 0: dL=-0.0001 [-0.0001,-0.0001]  KL=0.0000
+    L 1: dL=+0.0005 [+0.0001,+0.0010]  KL=0.0000
+    L 2: dL=+0.0000 [-0.0003,+0.0003]  KL=0.0000
+  saved /tmp/c4test/results/perlayer_tiny_bert_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/roberta (roberta, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['attention.output.dense', 'output.dense']
+  Baseline loss: 4.7677
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = +0.0003
+    L 0: dL=+0.0004 [+0.0003,+0.0004]  KL=0.0000
+    L 1: dL=+0.0003 [+0.0001,+0.0005]  KL=0.0000
+    L 2: dL=-0.0002 [-0.0003,-0.0001]  KL=0.0000
+  saved /tmp/c4test/results/perlayer_tiny_roberta_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/t5 (t5, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['layer.0.SelfAttention', 'layer.1.DenseReluDense']
+  Baseline loss: 6.0521
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = -0.0085
+    L 0: dL=-0.1068 [-0.1610,-0.0525]  KL=0.2633
+    L 1: dL=-0.0085 [-0.1093,+0.0924]  KL=0.2002
+    L 2: dL=-0.0930 [-0.1249,-0.0611]  KL=0.2853
+  saved /tmp/c4test/results/perlayer_tiny_t5_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/vit (vit, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['attention', 'mlp']
+  Baseline loss: 0.0000  (self-label CE 2.1173)
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = +0.0007
+    L 0: dL=+0.0004 [+0.0004,+0.0005]  KL=0.0004
+    L 1: dL=+0.0007 [+0.0005,+0.0008]  KL=0.0007
+    L 2: dL=+0.0007 [+0.0005,+0.0009]  KL=0.0007
+  saved /tmp/c4test/results/perlayer_tiny_vit_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/dinov2 (dinov2, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['attention', 'mlp']
+  Baseline loss: 0.0000  (self-label CE 2.1788)
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = +0.0010
+    L 0: dL=+0.0009 [+0.0009,+0.0009]  KL=0.0009
+    L 1: dL=+0.0010 [+0.0007,+0.0014]  KL=0.0010
+    L 2: dL=+0.0039 [+0.0034,+0.0044]  KL=0.0039
+  saved /tmp/c4test/results/perlayer_tiny_dinov2_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/mixer (mixer, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['mlp_tokens', 'mlp_channels']
+  Baseline loss: 0.0000  (self-label CE 2.1739)
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = +0.0016
+    L 0: dL=+0.0021 [+0.0020,+0.0022]  KL=0.0021
+    L 1: dL=+0.0016 [+0.0010,+0.0022]  KL=0.0016
+    L 2: dL=+0.0015 [+0.0013,+0.0017]  KL=0.0015
+  saved /tmp/c4test/results/perlayer_tiny_mixer_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/wav2vec2 (wav2vec2, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['attention', 'feed_forward']
+  Baseline loss: 5.3066
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = -0.0008
+    L 0: dL=+0.0001 [-0.0008,+0.0009]  KL=0.0000
+    L 1: dL=-0.0008 [-0.0010,-0.0006]  KL=0.0000
+    L 2: dL=+0.0015 [+0.0014,+0.0015]  KL=0.0000
+  saved /tmp/c4test/results/perlayer_tiny_wav2vec2_plumbing.json (0s)
+
+------------------------------------------------------------------------------
+tiny/whisper (whisper, 3 blocks)
+------------------------------------------------------------------------------
+  branch widths: block 0 -> [32, 32]; hooks ['self_attn', 'fc2']
+  Baseline loss: 4.6325
+  plumbing: dose-0 hook on block 1 -> |dL| = 0.00e+00; dose-1 -> dL = -0.0001
+    L 0: dL=+0.0001 [-0.0001,+0.0004]  KL=0.0000
+    L 1: dL=-0.0001 [-0.0003,+0.0002]  KL=0.0000
+    L 2: dL=+0.0000 [-0.0003,+0.0004]  KL=0.0000
+  saved /tmp/c4test/results/perlayer_tiny_whisper_plumbing.json (0s)
+/tmp/claude-0/-home-claude/5c80d2c8-c253-5f39-a63d-00ab0becc130/scratchpad/hg/census_v4/scramble_census_v4.py:701: RuntimeWarning: Mean of empty slice
+  e, w, l = inner[:t].mean(), inner[t:n - t].mean(), inner[n - t:].mean()
+/usr/local/lib/python3.11/dist-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+model                                          L     base    early    waist     late    w/e     blk0     last   plumb0
+tiny/bert                                      3   4.8373      nan   0.0005      nan    nan  -0.0001   0.0000  0.0e+00  QUICK
+tiny/dinov2                                    3   0.0000      nan   0.0010      nan    nan   0.0009   0.0039  0.0e+00  QUICK
+tiny/mixer                                     3   0.0000      nan   0.0016      nan    nan   0.0021   0.0015  0.0e+00  QUICK
+tiny/roberta                                   3   4.7677      nan   0.0003      nan    nan   0.0004  -0.0002  0.0e+00  QUICK
+tiny/t5                                        3   6.0521      nan  -0.0085      nan    nan  -0.1068  -0.0930  0.0e+00  QUICK
+tiny/vit                                       3   0.0000      nan   0.0007      nan    nan   0.0004   0.0007  0.0e+00  QUICK
+tiny/wav2vec2                                  3   5.3066      nan  -0.0008      nan    nan   0.0001   0.0015  0.0e+00  QUICK
+tiny/whisper                                   3   4.6325      nan  -0.0001      nan    nan   0.0001   0.0000  0.0e+00  QUICK
+export: 8 files -> /tmp/c4test/census_v4_results.zip (7 kB)
+export: 8 files -> /tmp/claude-0/-home-claude/5c80d2c8-c253-5f39-a63d-00ab0becc130/scratchpad/hg/census_v4/census_v4_results.zip (7 kB)

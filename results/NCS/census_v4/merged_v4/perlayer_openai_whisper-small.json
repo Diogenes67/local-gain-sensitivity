@@ -1,0 +1,117 @@
+{
+ "hf_id": "openai/whisper-small",
+ "arch": "whisper",
+ "family": "Audio encoder",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 244,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 0.8532910764217376,
+ "delta_L_profile": [
+  7.059966713190079,
+  0.0026817440986633967,
+  -0.013386017084121682,
+  0.010631124178568596,
+  0.35888808767000846,
+  2.891810351610184,
+  14.711783748865129,
+  3.1753101408481594,
+  0.7520652353763582,
+  1.3911655525366464,
+  0.5716406404972076,
+  3.508454082409541
+ ],
+ "delta_L_ci": [
+  [
+   6.8115782301624614,
+   7.258347012450298
+  ],
+  [
+   -0.01433433204889294,
+   0.02176003317038216
+  ],
+  [
+   -0.025111980785926146,
+   -0.00335349957148227
+  ],
+  [
+   0.00168137883146601,
+   0.022197472751140652
+  ],
+  [
+   0.2916949900984764,
+   0.4500616830090683
+  ],
+  [
+   2.582015482634306,
+   3.2030095190306502
+  ],
+  [
+   14.522920624117056,
+   14.9363745384415
+  ],
+  [
+   2.987975618541241,
+   3.3341507337490714
+  ],
+  [
+   0.6725266226132711,
+   0.8383403024574121
+  ],
+  [
+   1.2720607733726503,
+   1.5247506457567213
+  ],
+  [
+   0.5161326726774375,
+   0.6291412225862344
+  ],
+  [
+   3.2950962664186956,
+   3.7083538583417734
+  ]
+ ],
+ "kl_profile": [
+  7.250267744064331,
+  0.07162024695426225,
+  0.0453056034942468,
+  0.03875034811596076,
+  0.5166222890218098,
+  3.047531787554423,
+  14.928369744618733,
+  3.2311632593472797,
+  0.9666426221529643,
+  1.4901648620764414,
+  0.7012500594059626,
+  3.494612447420756
+ ],
+ "baseline_kl": 0.0,
+ "readout": "teacher-forced decoder cross-entropy on the reference transcript (lower-cased), LibriSpeech test-clean, utterances of at most 10 s; encoder scrambled, decoder untouched",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "self_attn",
+  "fc2"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 4,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 0.0026817440986633967,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "quick": false,
+ "elapsed_seconds": 36.605265378952026,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-21T10:37:53",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

@@ -1,0 +1,226 @@
+{
+ "source": "factorial_v2.ipynb (vast.ai, 18 Sept 2026, RTX PRO 6000), cell 6 printed output; per-model JSONs were written to /workspace/factorial_v2 on the instance and exported as factorial_v2.zip, which is not in the deposited folders. Values at printed precision.",
+ "drive_file_id": "1g-kRgz4zyqaCZEN0sB2XZSCSMFkISMMf",
+ "rows": [
+  {
+   "condition": "AR",
+   "seed": 0,
+   "R_ex0": 0.951,
+   "early_over_mid": 1.17,
+   "late_over_mid": 0.93,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.633,
+   "R_ex0_causal_mask_profile": 0.951
+  },
+  {
+   "condition": "AR",
+   "seed": 1,
+   "R_ex0": 1.022,
+   "early_over_mid": 1.08,
+   "late_over_mid": 0.87,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.638,
+   "R_ex0_causal_mask_profile": 1.022
+  },
+  {
+   "condition": "AR",
+   "seed": 2,
+   "R_ex0": 0.984,
+   "early_over_mid": 1.14,
+   "late_over_mid": 0.89,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.64,
+   "R_ex0_causal_mask_profile": 0.984
+  },
+  {
+   "condition": "AR",
+   "seed": 3,
+   "R_ex0": 0.999,
+   "early_over_mid": 1.14,
+   "late_over_mid": 0.86,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.637,
+   "R_ex0_causal_mask_profile": 0.999
+  },
+  {
+   "condition": "AR",
+   "seed": 4,
+   "R_ex0": 0.978,
+   "early_over_mid": 1.15,
+   "late_over_mid": 0.9,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.621,
+   "R_ex0_causal_mask_profile": 0.978
+  },
+  {
+   "condition": "MLM",
+   "seed": 0,
+   "R_ex0": 0.827,
+   "early_over_mid": 1.54,
+   "late_over_mid": 0.88,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.1,
+   "R_ex0_causal_mask_profile": 0.788
+  },
+  {
+   "condition": "MLM",
+   "seed": 1,
+   "R_ex0": 0.831,
+   "early_over_mid": 1.48,
+   "late_over_mid": 0.93,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.13,
+   "R_ex0_causal_mask_profile": 0.807
+  },
+  {
+   "condition": "MLM",
+   "seed": 2,
+   "R_ex0": 0.84,
+   "early_over_mid": 1.49,
+   "late_over_mid": 0.89,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.148,
+   "R_ex0_causal_mask_profile": 0.805
+  },
+  {
+   "condition": "MLM",
+   "seed": 3,
+   "R_ex0": 0.827,
+   "early_over_mid": 1.54,
+   "late_over_mid": 0.88,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.095,
+   "R_ex0_causal_mask_profile": 0.804
+  },
+  {
+   "condition": "MLM",
+   "seed": 4,
+   "R_ex0": 0.806,
+   "early_over_mid": 1.6,
+   "late_over_mid": 0.88,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.128,
+   "R_ex0_causal_mask_profile": 0.792
+  },
+  {
+   "condition": "CMLM",
+   "seed": 0,
+   "R_ex0": 0.723,
+   "early_over_mid": 1.94,
+   "late_over_mid": 0.83,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.806,
+   "R_ex0_causal_mask_profile": 0.723
+  },
+  {
+   "condition": "CMLM",
+   "seed": 1,
+   "R_ex0": 0.726,
+   "early_over_mid": 1.91,
+   "late_over_mid": 0.84,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.812,
+   "R_ex0_causal_mask_profile": 0.726
+  },
+  {
+   "condition": "CMLM",
+   "seed": 2,
+   "R_ex0": 0.706,
+   "early_over_mid": 1.77,
+   "late_over_mid": 1.06,
+   "pooled_rule": true,
+   "two_arm_rule": true,
+   "val_loss": 5.81,
+   "R_ex0_causal_mask_profile": 0.706
+  },
+  {
+   "condition": "CMLM",
+   "seed": 3,
+   "R_ex0": 0.718,
+   "early_over_mid": 1.83,
+   "late_over_mid": 0.96,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.806,
+   "R_ex0_causal_mask_profile": 0.718
+  },
+  {
+   "condition": "CMLM",
+   "seed": 4,
+   "R_ex0": 0.723,
+   "early_over_mid": 1.83,
+   "late_over_mid": 0.93,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 5.767,
+   "R_ex0_causal_mask_profile": 0.723
+  },
+  {
+   "condition": "PLM",
+   "seed": 0,
+   "R_ex0": 0.91,
+   "early_over_mid": 1.32,
+   "late_over_mid": 0.88,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.821,
+   "R_ex0_causal_mask_profile": 0.915
+  },
+  {
+   "condition": "PLM",
+   "seed": 1,
+   "R_ex0": 0.936,
+   "early_over_mid": 1.28,
+   "late_over_mid": 0.85,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.8,
+   "R_ex0_causal_mask_profile": 0.954
+  },
+  {
+   "condition": "PLM",
+   "seed": 2,
+   "R_ex0": 0.883,
+   "early_over_mid": 1.42,
+   "late_over_mid": 0.85,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.808,
+   "R_ex0_causal_mask_profile": 0.883
+  },
+  {
+   "condition": "PLM",
+   "seed": 3,
+   "R_ex0": 0.936,
+   "early_over_mid": 1.28,
+   "late_over_mid": 0.85,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.812,
+   "R_ex0_causal_mask_profile": 0.935
+  },
+  {
+   "condition": "PLM",
+   "seed": 4,
+   "R_ex0": 0.93,
+   "early_over_mid": 1.28,
+   "late_over_mid": 0.87,
+   "pooled_rule": false,
+   "two_arm_rule": false,
+   "val_loss": 4.796,
+   "R_ex0_causal_mask_profile": 0.933
+  }
+ ]
+}

@@ -101,12 +101,41 @@ def ed_table4(rows, dep):
     add("", "controlled, block partialled out", "", mc([r["partial_abs"] for r in rows]), mc([r["partial_rel"] for r in rows]), "")
     add("", "controlled, first differences over adjacent blocks", "", mc([r["diff_abs"] for r in rows]), mc([r["diff_rel"] for r in rows]), "")
     add("", "pretrained, Spearman σ₁ with consequence", "6 models, blocks 1 to L − 2", mc([m["rho_abs"] for m in mp["models"]]), mc([m["rho_rel"] for m in mp["models"]]), "input-resampled CIs in Fig. 2f")
+    # d. predictor sets on identical folds (predictor_check.py; review 5, item 1) and e. same-position readout (item 4)
+    pc = J("predictor_check.json"); rc_ = J("readout_check.json")
+    S4 = ("depth", "depth+norm", "depth+randgain", "depth+gain")
+    four = lambda e: " / ".join(f(e[n]["r2"]) for n in S4)
+    four_set = lambda e, key, s_: " / ".join(f(e[n][key][s_]) for n in S4)
+    dl = lambda e: (lambda d_: f"Δ(σ₁ − random gain) {f(d_['point'])} ({f(d_['ci'][0])} to {f(d_['ci'][1])})")(e["depth+randgain"]["delta_r2_depth_gain_minus_this"])
+    C, P = pc["controlled"], pc["pretrained"]
+    add("**d** Predictor sets on identical folds", "controlled, leave one model out", "50 folds", four(C["y_abs"]["L1O"]), four(C["y_rel"]["L1O"]), "depth / + norm / + random-direction gain / + σ₁; " + dl(C["y_abs"]["L1O"]))
+    add("", "controlled, leave one condition out", "10 folds pooled", four(C["y_abs"]["LOCO"]), four(C["y_rel"]["LOCO"]), dl(C["y_abs"]["LOCO"]))
+    add("", "", "4 text conditions pooled", four_set(C["y_abs"]["LOCO"], "by_set", "training_conditions"), four_set(C["y_rel"]["LOCO"], "by_set", "training_conditions"), "")
+    add("", "", "6 k-gram orders pooled", four_set(C["y_abs"]["LOCO"], "by_set", "kgram"), four_set(C["y_rel"]["LOCO"], "by_set", "kgram"), "")
+    add("", "controlled, leave one set out", "fit 20 text models, predict 30 k-gram", four_set(C["y_abs"]["LOSO"], "by_set", "kgram"), four_set(C["y_rel"]["LOSO"], "by_set", "kgram"), "")
+    add("", "", "fit 30 k-gram models, predict 20 text", four_set(C["y_abs"]["LOSO"], "by_set", "training_conditions"), four_set(C["y_rel"]["LOSO"], "by_set", "training_conditions"), "")
+    add("", "pretrained, leave one model out", "6 folds", four(P["y_abs"]["L1O"]), four(P["y_rel"]["L1O"]), dl(P["y_abs"]["L1O"]))
+    add("", "pretrained, leave one family out", "5 folds", four(P["y_abs"]["LOFO"]), four(P["y_rel"]["LOFO"]), dl(P["y_abs"]["LOFO"]) + "; per-family values with intervals in Fig. 2g")
+    add("**e** Same-position readout D~t~", "controlled, leave one model out", "50 folds", four(C["y_abs_t"]["L1O"]), four(C["y_rel_t"]["L1O"]), "the four sets as in d; " + dl(C["y_abs_t"]["L1O"]))
+    add("", "controlled, leave one condition out", "10 folds pooled", four(C["y_abs_t"]["LOCO"]), four(C["y_rel_t"]["LOCO"]), dl(C["y_abs_t"]["LOCO"]))
+    add("", "controlled, leave one set out", "fit 20 text models, predict 30 k-gram", four_set(C["y_abs_t"]["LOSO"], "by_set", "kgram"), four_set(C["y_rel_t"]["LOSO"], "by_set", "kgram"), "")
+    add("", "", "fit 30 k-gram models, predict 20 text", four_set(C["y_abs_t"]["LOSO"], "by_set", "training_conditions"), four_set(C["y_rel_t"]["LOSO"], "by_set", "training_conditions"), "")
+    add("", "pretrained, leave one family out", "5 folds", four(P["y_abs_t"]["LOFO"]), four(P["y_rel_t"]["LOFO"]), dl(P["y_abs_t"]["LOFO"]))
+    ct, pt = rc_["controlled"], rc_["pretrained"]
+    add("", "controlled, pooled slope and within-model ρ", "50 models", f"{f(ct['y_abs_t']['slope'])} (s.e. {f(ct['y_abs_t']['se'])}); median ρ {f(ct['y_abs_t']['rho_median'])}, {ct['y_abs_t']['n_pos']} of 50 positive",
+        f"{f(ct['y_rel_t']['slope'])} (s.e. {f(ct['y_rel_t']['se'])}); median ρ {f(ct['y_rel_t']['rho_median'])}, {ct['y_rel_t']['n_pos']} of 50 positive", "all-positions values in b and c")
+    add("", "pretrained, pooled slope and within-model ρ", "6 models", f"{f(pt['y_abs_t']['slope'])} (s.e. {f(pt['y_abs_t']['se'])}); median ρ {f(pt['y_abs_t']['rho_median'])}, {pt['y_abs_t']['n_pos']} of 6 positive",
+        f"{f(pt['y_rel_t']['slope'])} (s.e. {f(pt['y_rel_t']['se'])}); median ρ {f(pt['y_rel_t']['rho_median'])}, {pt['y_rel_t']['n_pos']} of 6 positive", "")
     hdr = "| Section | Analysis | Subset | Normalised sensitivity | Relative dose (ε = 0.1) | Note |\n|---|---|---|---|---|---|\n"
     foot = ("\n\nNormalised sensitivity is the same-sequence divergence along v₁ divided by the squared displacement; relative dose is the divergence "
             "at a displacement of 0.1‖h‖. Centred R² is 1 − SS(residual)/SS(total) of the within-model-centred log profile pooled over the held-out models, "
             "with β and γ fitted on the remaining models (loco_check.py, matched_pretrained_analysis.py); it measures the shape of a profile, not its level. "
             "Leave one condition out asks whether a condition absent from training is predicted when the other nine are present; the text-to-k-gram fold asks "
-            "whether a whole source family is predicted from the other. Pooled slopes: regression_check.py; per-model and correlation values: matched_analysis.py.")
+            "whether a whole source family is predicted from the other. Pooled slopes: regression_check.py; per-model and correlation values: matched_analysis.py. "
+            "Section d compares four predictor sets on identical folds (predictor_check.py): block position; block position with the log activation norm; with the log gain "
+            "along a random unit direction at ε = 0.01; and with log σ₁. Δ is the pooled R² of the σ₁ set minus that of the random-direction set on the same folds, with a "
+            "95% percentile interval from 2,000 resamples of the held-out models. Section e repeats d for the divergence read at the perturbed position only (D~t~, the "
+            "Fig. 3 readout) in place of the mean over the perturbed and later positions (D̄, the readout of a–c and of Fig. 2); readout_check.py.")
     md = hdr + "\n".join(T) + foot
     open(os.path.join(OUT, "ed_table4.md"), "w").write(md)
     return dict(n_rows=len(T), spearman_abs_median=float(np.median(sa)), spearman_rel_median=float(np.median(sr)),
@@ -195,7 +224,7 @@ def ed_table3_nmi():
     # rows added after the census row
     ncol = out[0].count("|") - 1
     new = [["Matched assay in pretrained decoders (Figs 2f and 3b–e; ED Table 4)", "σ~1~ and matched displacement along v~1~ and norm-matched random directions", "token-local, natural context, natural inputs, 20 inputs × 6 positions",
-            "displacement at ε ∈ {0.01, 0.03, 0.1}; linearised response", "float32", "GPT-2 124M, Pythia-410M, Pythia-1.4B, Llama-3.2-1B, Qwen2.5-1.5B, Gemma-2-2B",
+            "displacement at ε ∈ {0.01, 0.03, 0.1, 0.3}; linearised response", "float32", "GPT-2 124M, Pythia-410M, Pythia-1.4B, Llama-3.2-1B, Qwen2.5-1.5B, Gemma-2-2B",
             "matched_pretrained.py, matched_pretrained_analysis.py, e1_extra.py", "yes", "blocks 1 to L − 2; WikiText-103 validation; 500 input resamples"],
            ["30-input survey (Fig. 5a; Methods)", "σ~1~", "token-local, natural context, natural inputs, 30 inputs × 8 positions", "–", "float32",
             "11 models of Figs 2, 3 and 5", "survey_sigma1_v2.py (SURVEY_N_INPUTS = 30), e3_analysis.py", "yes", "whole-input bootstrap; five-input subsets"],
@@ -213,6 +242,18 @@ def ed_table3_nmi():
                  ("(ED Fig. 8b; SN 13)", "(ED Fig. 8b; SN 4)"), ("(ED Fig. 8a; SN 4)", "(ED Fig. 8a; SN 1)"),
                  ("checkpoints (SN 4, 6, 13, 16; ED Fig. 8)", "checkpoints (SN 1, 2 and 4; ED Fig. 8)"), ("Supplementary Note 17", "Supplementary Note 5"),
                  ("| Emergence during training (ED Fig. 4) |", "| Emergence during training (ED Fig. 4a,b) |"),
+                 ("profile thirds 1–7, 8–15, 16–22", "profile thirds 1–7, 8–16, 17–23"),
+                 ("| 26 checkpoints, d1_v21 (Drive) |", "| 20 checkpoints (the six switching checkpoints are in the next row), d1_v21 (Drive) |"),
+                 ("| token-local, one position | – | float32 | 12 runs, leaking prefix mask |", "| token-local, one position, random token ids, no attention mask at profile time | – | float32 | 12 runs, leaking prefix mask |"),
+                 ("| branch rotation of blocks 4–7 | float32 | 60 runs (March 2026; checkpoints and per-model files not retained) |", "| branch rotation, together, of the middle blocks identified from each model's σ~1~ profile | float32 | 60 runs (May 2026; checkpoints and per-model files not retained) |"),
+                 ("k-gram models (March 2026) | d3f_windowed_scrambling.py", "k-gram models (May 2026) | d3f_windowed_scrambling.py"),
+                 ("| branch rotation of block 5, then 500 fine-tuning steps of the downstream blocks | float32 | k = 8 models (March 2026) |", "| rotation of the residual stream at the output of block 5, then 500 fine-tuning steps of the downstream blocks | float32 | k = 8 models (May 2026) |"),
+                 ("| top five right singular vectors of the block-5 token-local Jacobian by randomised SVD | token-local |", "| top five right singular vectors of the block-5 Jacobian over the whole input, by randomised SVD | whole-sequence, causal mask |"),
+                 ("nine k-gram models (March 2026) | exp4a_singular_direction_perturbation.py", "nine k-gram models (May 2026) | exp4a_singular_direction_perturbation.py"),
+                 ("k-gram models (March 2026) | d3r_residual_gain_stress.py", "k-gram models (May 2026) | d3r_residual_gain_stress.py"),
+                 ("| Dyck-2 probes (ED Fig. 8a; SN 1) | – | – | per-block branch rotation; linear probes; participation ratio | float32 | four Dyck-2 models (March 2026) |", "| Bracket-nesting probes (ED Fig. 8a; SN 1) | – | – | rotation of the residual stream at the input of one block at a time; linear probes; participation ratio | float32 | four bracket-nesting models (May 2026) |"),
+                 ("The March 2026 routing, skip-coefficient and k-gram profiles, taken by forward-mode iteration on J over the whole layer input at random token ids, are superseded", "The routing and skip-coefficient profiles of March 2026 and the k-gram profiles of May 2026, taken by forward-mode iteration on J over the whole layer input at random token ids, are superseded"),
+                 ("the March mechanism-experiment checkpoints (SN 1, 2 and 4; ED Fig. 8) were not retained", "the May 2026 mechanism-experiment checkpoints (SN 1 to 4; ED Fig. 8) were not retained"),
                  ("three 1.3B seeds, 354M controls, Pythia-410M public checkpoints |", "three 1.3B seeds, 354M controls |"),
                  ("; s2_pythia_developmental.py (checkpoints; canonical estimator)", "")):
         assert t3.count(x) == 1, x

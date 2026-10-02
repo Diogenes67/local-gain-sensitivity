@@ -1,0 +1,117 @@
+{
+ "hf_id": "FacebookAI/roberta-base",
+ "arch": "roberta",
+ "family": "Masked encoder",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 125,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 2.0011085947354634,
+ "delta_L_profile": [
+  1.9533961097399395,
+  1.2119056423505148,
+  0.5415480415026348,
+  0.4070972641309103,
+  0.3945589741071065,
+  0.4215110659599306,
+  0.49122931957244864,
+  0.49465630054473886,
+  0.488402783870697,
+  0.6047070463498434,
+  0.44380301237106323,
+  6.847536774476369
+ ],
+ "delta_L_ci": [
+  [
+   1.879922911028067,
+   2.019460119406382
+  ],
+  [
+   1.1369701030850412,
+   1.2835948379834494
+  ],
+  [
+   0.49177284747362143,
+   0.5831903439760211
+  ],
+  [
+   0.3767067483067511,
+   0.43959908455610286
+  ],
+  [
+   0.36233299960692744,
+   0.4249992315967876
+  ],
+  [
+   0.38117622752984354,
+   0.4559577027956646
+  ],
+  [
+   0.4596869759758313,
+   0.5245070751508077
+  ],
+  [
+   0.4629601780573528,
+   0.5289948630332946
+  ],
+  [
+   0.4502018254995343,
+   0.5318215157588323
+  ],
+  [
+   0.5703752993543942,
+   0.6393317711353304
+  ],
+  [
+   0.4107071454326314,
+   0.4789783592025438
+  ],
+  [
+   6.722086855570475,
+   6.944206177592278
+  ]
+ ],
+ "kl_profile": [
+  2.2785141785939533,
+  1.4551826516787212,
+  0.7170858363310496,
+  0.5527986357609431,
+  0.5188049147526423,
+  0.5538733293612798,
+  0.6222132980823517,
+  0.6750463644663492,
+  0.6421008765697479,
+  0.6712293883164724,
+  0.5872722685337066,
+  7.029252004623413
+ ],
+ "baseline_kl": 0.0,
+ "readout": "masked-LM cross-entropy at masked positions, WikiText-103 validation, 128-token windows, 15% masking (80/10/10), fixed masks",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "attention.output.dense",
+  "output.dense"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 16,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 1.2119056423505148,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "quick": false,
+ "elapsed_seconds": 13.945975303649902,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-20T03:28:15",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

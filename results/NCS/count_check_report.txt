@@ -1,0 +1,32 @@
+status claim                                                                                   text  files mentions
+PASS   45 pretrained models (survey, canonical)                                                  45     45        5
+PASS   45 per-model sigma1 files (survey, canonical)                                             45     45        5
+PASS   45 models (rotation census v4)                                                            45     45        2
+PASS   45 per-layer files (census v4 merged)                                                     45     45        2
+PASS   44 pretrained models (census valid after ceiling exclusion)                               44     44        2
+PASS   210 pairs (estimator validation: 120 cell H + 3 x 30 ConvNeXt/Mamba)                     210    210        1
+PASS   120 pairs (cell H)                                                                       120    120        1
+PASS   30 pairs per model (ConvNeXt/Mamba validation)                                            30     30        2
+PASS   20 runs (mask x loss factorial)                                                           20     20        1
+PASS   20 models (mask x loss factorial, Methods)                                                20     20        1
+PASS   31 runs (width x depth grid v2, default lr)                                               31     31        2
+PASS   30 models (k-gram Markov, reprofile)                                                      30     30        1
+PASS   18 runs (topology, reprofile)                                                             18     18        1
+PASS   15 runs (alpha sweep, reprofile)                                                          15     15        3
+PASS   50 controlled models (matched perturbation assay)                                         50     50        5
+PASS   50 models (matched_stats n_models)                                                        50     50        5
+PASS   60 synthetic models (lag + pair families, 6 lags x 5 seeds x 2)                           60     60        2
+PASS   30 runs (entropy-matched Markov family, 10k steps)                                        30     30        1
+PASS   6 runs (scale point: three real + three shuffled, 24 layers)                               6      6        1
+PASS   6 matched-assay files (scale point)                                                        6      6        1
+PASS   13 models (four probe protocols; whole-sequence set)                                      13     13        2
+PASS   13 models (random-ids set)                                                                13     13        2
+PASS   11 models (isolated-token set)                                                            11     11        1
+PASS   7 models (branch vs block)                                                                 7      7       50
+PASS   3 decoders float16 (Pythia 2.8B, 6.9B, 12B)                                                3      3       21
+PASS   8 models (spectral radius comparison)                                                      8      8        7
+PASS   5 Pythia models (metrics: CKA, effective rank, Frobenius)                                  5      5        0
+PASS   26 runs (destroyed-data d1 v2.1: 5 real, 5 shuffled, 5 bidir, 5 randlab, 3+3 transfer)    26     26        4
+SKIP   60 models (entropy control, Design A) - per-model files not retained                    None   None        1
+
+29 checks, 0 failed

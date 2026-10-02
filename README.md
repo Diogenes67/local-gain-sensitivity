@@ -1,56 +1,62 @@
 # Code and results for "When local amplification predicts downstream sensitivity in neural networks"
 
-Repository: https://github.com/Diogenes67/local-gain-sensitivity
-
-Code for the Nature Machine Intelligence submission. 50 scripts and notebooks; 178 result files listed with SHA-256 in
-`results_manifest_nmi.md`.
+Code and results for the Patterns submission (Porter, Hassen, Saratchandran, Liao, Verjans and van den Hengel, 2026).
+98 scripts and notebooks under `code/`; 260 result files (107 MB) under `results/`, each listed with its SHA-256 in
+`results_manifest.md`. Table S7 of the paper gives, for every result, the operator, Jacobian domain, intervention, precision,
+models, script and evaluation data; Supplemental note 5 gives the class of evidence for each result and what was withdrawn.
 
 ## Layout
 
-- `code/experiments/` GPU experiments, each written to save its outputs to persistent storage as it runs and to resume after a disconnect.
-  `survey/survey_sigma1_v2.py` is the canonical gain estimator (token-local Jacobian, J^T J power iteration by forward- and reverse-mode
-  products, float32, natural inputs); every profile in the paper comes from it or imports it, except Extended Data Fig. 4a,b
-  (March 2026 single-position estimator, stated in the legend).
-- `code/analysis/` statistics read from the result files (matched assay, pooled regressions, held-out prediction, linearised response,
-  pretrained assay, region lists, count check).
-- `code/figures/`, `code/tables/` build every main and Extended Data figure and table from the result files.
-- `code/manuscript/` assembles the manuscript and the Supplementary Information from markdown sources.
+- `code/experiments/` GPU experiments. Each writes its outputs to persistent storage as it runs and resumes after a disconnect.
+  `survey/survey_sigma1_v2.py` is the canonical gain estimator (token-local Jacobian, J^T J power iteration by forward- and
+  reverse-mode products, float32, natural inputs); every profile in the paper comes from it or imports it. `validation/` holds the
+  exact-decomposition validation (25 Sept 2026 rerun) and the Mamba full-scan check; `controlled/` the training conditions, k-gram,
+  entropy-matched, lag, 24-layer, mask x loss, grid, topology and skip-coefficient runs and the intervention comparison;
+  `matched_assay/` and `pretrained_assay/` the matched token-local perturbation assay and the linearised response;
+  `census/` the 45-model branch-rotation census and the representational-measure comparison; `checkpoints/` the Pythia-410M trajectory.
+- `code/analysis/` statistics read from the result files: within-model correlations and pooled regressions (`matched_analysis.py`,
+  `regression_check.py`), held-out prediction (`loco_check.py`, `predictor_check.py` with the joint baseline, `family_transfer.py`,
+  `readout_check.py`), the linearised response and downstream factor (`linresp_*.py`, `downstream_factor.py`), the pretrained assay
+  (`matched_pretrained_analysis.py`, `e1_extra.py`), region lists (`region_check.py`) and the count check.
+- `code/figures/`, `code/tables/` build the main and supplemental figures and tables from the result files
+  (`make_fig1_jmlr.py` is Figure 1, `make_fig2_patterns.py` Figure 2, `make_fig3_direction.py` Figure 3, `make_fig4_data.py` Figure 4,
+  `make_fig5_pretrained.py` Figure 5, `make_edfigs.py` and `make_edfig4_nmi.py` Figures S1–S11, `make_tables.py` and
+  `make_ed_tables_nmi.py` Tables S1–S4 and S7).
+- `code/manuscript/` builds the submitted documents from markdown (`build.sh`, `build_supp.py`, `update_table_s3.py`).
+- `results/` the result files, in their original folder structure.
 
 ## Display items
 
 | Display item | Script | Result folder |
 |---|---|---|
-| Fig. 1a–e | make_fig1_nmi.py | validation/ |
-| Fig. 2 | make_fig2_scale.py | matched/, scale/, matched_pretrained/, loco_check.json |
-| Fig. 3 | make_fig3_direction.py | matched/, matched/linresp/, matched_pretrained/ |
-| Fig. 4 | make_fig4_data.py | d1/results_v21, reprofile/, markov/ |
-| Fig. 5 | make_fig5_pretrained.py | survey_30inputs/, census_v4/, e7_checkpoints/results (panel c) |
-| Table 1 | values from the analyses above | see Extended Data Table 3 |
-| ED Fig. 4 | make_edfig4_nmi.py | results/ (March 2026 trajectories, panels a,b), e7_checkpoints/results (panels c,d) |
-| ED Figs 1–3, 5–10 | make_edfigs.py, matched_analysis.py | see Extended Data Table 3 |
-| ED Tables 1–3 | make_tables.py, make_ed_tables_nmi.py | survey, census_v4 |
-| ED Tables 4, 5 | make_ed_tables_nmi.py | regression_check.json, loco_check.json, matched_pretrained/, d1/, reprofile/, markov/, scale/ |
-
-Extended Data Table 3 gives, for every result, the operator, Jacobian domain, intervention, precision, models, script and evaluation data.
-Supplementary Note 5 gives the class of evidence for each result (regenerable, retained summary or image only) and what was withdrawn.
+| Figure 1 | make_fig1_jmlr.py | validation_rerun/results/validation |
+| Figure 2 | make_fig2_patterns.py (predictor_check.py, family_transfer.py, regression_check.py) | matched/, scale/, matched_pretrained/, analysis/ |
+| Figure 3 | make_fig3_direction.py (downstream_factor.py, linresp_centred_analysis.py) | matched/, matched/linresp, matched/linresp_centred, matched_pretrained/, matched_pretrained_centred/ |
+| Figure 4 | make_fig4_data.py | d1/results_v21, reprofile/, markov/ |
+| Figure 5 | make_fig5_pretrained.py | survey_30inputs/, census_v4/, e7_checkpoints/ |
+| Table 1 | values from the analyses above | Table S7 |
+| Table 2 | values from the analyses above | Table S3 |
+| Figure S1 | mamba_fullscan_validation.py | validation_rerun/results/fullscan |
+| Figures S2–S11 | make_edfigs.py, make_edfig4_nmi.py | Table S7 |
+| Tables S1, S2, S7 | make_tables.py | survey, census_v4 |
+| Tables S3, S4 | make_ed_tables_nmi.py, update_table_s3.py | regression_check.json, loco_check.json, predictor_check.json, matched_pretrained/, d1/, reprofile/, markov/, scale/ |
 
 ## Requirements
 
 Python 3.11, torch >= 2.6, transformers >= 5.16, numpy, scipy, pandas, statsmodels, matplotlib, huggingface_hub, datasets, pyarrow;
-timm for MLP-Mixer; torchvision for CIFAR-100. The experiments ran on single NVIDIA A100 or RTX PRO 6000 GPUs.
+timm for MLP-Mixer; torchvision for CIFAR-100. The experiments ran on single NVIDIA A100, H200 or RTX PRO 6000 GPUs.
+The manuscript build needs pandoc >= 3 with citeproc, xelatex and python3.
 
-## Rebuilding
+## Rebuilding the analyses from results/
 
-    python matched_analysis.py            # needs the unzipped matched/, d1/ and reprofile/ results (NCS_R)
+    NCS_R=results/NCS python matched_analysis.py        # unzip matched/matched_results.zip and the d1, reprofile and scale zips first
     python regression_check.py; python loco_check.py
-    python make_fig1_nmi.py; python make_fig2_scale.py; python make_fig3_direction.py; python make_fig4_data.py; python make_fig5_pretrained.py; python make_edfig4_nmi.py
-    NCS_R=<results> python make_ed_tables_nmi.py
-    python nmi/assemble_nmi.py; python nmi/build_nmi.py; python make_supplement_nmi.py
+    NCS_R=results/NCS MP_RESULTS=results/NCS/matched_pretrained/results python predictor_check.py
+    MP_RESULTS=results/NCS/matched_pretrained/results python family_transfer.py
+    python make_fig1_jmlr.py; NCS_R=results/NCS python make_fig2_patterns.py; python make_fig3_direction.py; python make_fig4_data.py; python make_fig5_pretrained.py
+    NCS_R=results/NCS python make_ed_tables_nmi.py; python update_table_s3.py
+    bash build.sh                                        # main_patterns.{docx,pdf}, supplement_patterns.{docx,pdf}
 
-## Licence
+## Licence and citation
 
-Code: MIT (`LICENSE`). Result files and the results manifest: CC BY 4.0 (`DATA_LICENSE.md`).
-
-## Before release
-
-Tag a release and mint a Zenodo DOI through the GitHub integration; cite the DOI in the Code availability statement.
+MIT licence (code). Results are released under CC BY 4.0. Cite the paper and the Zenodo DOI of the tagged release.

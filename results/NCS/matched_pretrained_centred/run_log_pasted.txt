@@ -1,0 +1,189 @@
+linearised response, pretrained decoders, gauge recorded | linresp-pretrained-centred-2026-09-25 | {'torch': '2.11.0+cu128', 'transformers': '5.16.1', 'python': '3.13.15', 'date': '2026-09-25T05:17:09', 'device': 'cuda', 'gpu': 'NVIDIA A100-SXM4-40GB'} | out=/content/drive/MyDrive/hourglass/matched_pretrained_centred | assay=/content/drive/MyDrive/hourglass/matched_pretrained/results
+
+------------------------------------------------------------------------------
+gpt2
+------------------------------------------------------------------------------
+  Loading gpt2 (gpt2, float32)...
+  12 blocks; 124M params
+    block  0: sigma1  34.367  pred/meas KL(v1, .01) 0.993  |mean g|/rms g (v1) 0.996  centred/raw amp (v1) 0.008  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (10 s)
+    block  1: sigma1   3.459  pred/meas KL(v1, .01) 0.993  |mean g|/rms g (v1) 0.997  centred/raw amp (v1) 0.007  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block  2: sigma1   8.341  pred/meas KL(v1, .01) 0.653  |mean g|/rms g (v1) 0.990  centred/raw amp (v1) 0.020  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (6 s)
+    block  3: sigma1   7.532  pred/meas KL(v1, .01) 1.008  |mean g|/rms g (v1) 0.995  centred/raw amp (v1) 0.010  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (5 s)
+    block  4: sigma1   4.650  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.994  centred/raw amp (v1) 0.011  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (7 s)
+    block  5: sigma1   5.219  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.993  centred/raw amp (v1) 0.015  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (7 s)
+    block  6: sigma1   4.556  pred/meas KL(v1, .01) 0.996  |mean g|/rms g (v1) 0.993  centred/raw amp (v1) 0.013  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (5 s)
+    block  7: sigma1   5.311  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.986  centred/raw amp (v1) 0.028  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (4 s)
+    block  8: sigma1   4.912  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.982  centred/raw amp (v1) 0.036  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (5 s)
+    block  9: sigma1   5.334  pred/meas KL(v1, .01) 1.012  |mean g|/rms g (v1) 0.996  centred/raw amp (v1) 0.008  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (5 s)
+    block 10: sigma1   6.190  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.999  centred/raw amp (v1) 0.002  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (7 s)
+    block 11: sigma1  10.805  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 1.000  centred/raw amp (v1) 0.001  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (7 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_gpt2.json (1.3 min)
+  purged Hub cache for gpt2
+
+------------------------------------------------------------------------------
+EleutherAI/pythia-410m
+------------------------------------------------------------------------------
+  Loading EleutherAI/pythia-410m (pythia, float32)...
+  24 blocks; 405M params
+    block  0: sigma1  53.736  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.263  centred/raw amp (v1) 0.930  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (14 s)
+    block  1: sigma1   4.411  pred/meas KL(v1, .01) 0.996  |mean g|/rms g (v1) 0.172  centred/raw amp (v1) 0.970  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (14 s)
+    block  2: sigma1   3.907  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.235  centred/raw amp (v1) 0.945  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (15 s)
+    block  3: sigma1   3.608  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.174  centred/raw amp (v1) 0.970  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (15 s)
+    block  4: sigma1   3.681  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.196  centred/raw amp (v1) 0.962  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (15 s)
+    block  5: sigma1   3.019  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.201  centred/raw amp (v1) 0.960  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (16 s)
+    block  6: sigma1   3.895  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.199  centred/raw amp (v1) 0.960  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (12 s)
+    block  7: sigma1   4.366  pred/meas KL(v1, .01) 0.986  |mean g|/rms g (v1) 0.273  centred/raw amp (v1) 0.925  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (10 s)
+    block  8: sigma1   3.533  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.240  centred/raw amp (v1) 0.943  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (11 s)
+    block  9: sigma1   3.158  pred/meas KL(v1, .01) 0.998  |mean g|/rms g (v1) 0.241  centred/raw amp (v1) 0.942  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (11 s)
+    block 10: sigma1   3.167  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.258  centred/raw amp (v1) 0.933  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (11 s)
+    block 11: sigma1   3.437  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.219  centred/raw amp (v1) 0.952  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block 12: sigma1   3.325  pred/meas KL(v1, .01) 0.998  |mean g|/rms g (v1) 0.231  centred/raw amp (v1) 0.947  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (11 s)
+    block 13: sigma1   3.901  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.197  centred/raw amp (v1) 0.961  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (10 s)
+    block 14: sigma1   3.113  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.206  centred/raw amp (v1) 0.957  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block 15: sigma1   3.102  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.308  centred/raw amp (v1) 0.905  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (8 s)
+    block 16: sigma1   4.663  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.342  centred/raw amp (v1) 0.883  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (8 s)
+    block 17: sigma1   4.162  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.220  centred/raw amp (v1) 0.952  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block 18: sigma1   3.487  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.397  centred/raw amp (v1) 0.843  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (11 s)
+    block 19: sigma1   4.260  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.330  centred/raw amp (v1) 0.891  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block 20: sigma1   4.849  pred/meas KL(v1, .01) 0.997  |mean g|/rms g (v1) 0.330  centred/raw amp (v1) 0.891  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (9 s)
+    block 21: sigma1   5.601  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.258  centred/raw amp (v1) 0.934  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (8 s)
+    block 22: sigma1   4.230  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.476  centred/raw amp (v1) 0.774  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (10 s)
+    block 23: sigma1   5.079  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.872  centred/raw amp (v1) 0.239  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (10 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_EleutherAI_pythia-410m.json (4.4 min)
+  purged Hub cache for EleutherAI/pythia-410m
+
+------------------------------------------------------------------------------
+EleutherAI/pythia-1.4b
+------------------------------------------------------------------------------
+  Loading EleutherAI/pythia-1.4b (pythia, float32)...
+  24 blocks; 1415M params
+    block  0: sigma1  86.646  pred/meas KL(v1, .01) 0.998  |mean g|/rms g (v1) 0.227  centred/raw amp (v1) 0.948  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block  1: sigma1   4.653  pred/meas KL(v1, .01) 1.014  |mean g|/rms g (v1) 0.098  centred/raw amp (v1) 0.990  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (31 s)
+    block  2: sigma1   4.722  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.181  centred/raw amp (v1) 0.967  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block  3: sigma1   4.258  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.204  centred/raw amp (v1) 0.958  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (30 s)
+    block  4: sigma1   4.921  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.120  centred/raw amp (v1) 0.986  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block  5: sigma1   4.541  pred/meas KL(v1, .01) 1.007  |mean g|/rms g (v1) 0.170  centred/raw amp (v1) 0.971  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block  6: sigma1   3.983  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.142  centred/raw amp (v1) 0.980  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block  7: sigma1   4.512  pred/meas KL(v1, .01) 1.005  |mean g|/rms g (v1) 0.181  centred/raw amp (v1) 0.967  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (22 s)
+    block  8: sigma1   3.922  pred/meas KL(v1, .01) 1.006  |mean g|/rms g (v1) 0.145  centred/raw amp (v1) 0.979  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block  9: sigma1   3.588  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.153  centred/raw amp (v1) 0.976  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block 10: sigma1   3.830  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.230  centred/raw amp (v1) 0.947  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block 11: sigma1   4.009  pred/meas KL(v1, .01) 1.011  |mean g|/rms g (v1) 0.156  centred/raw amp (v1) 0.976  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (24 s)
+    block 12: sigma1   3.779  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.153  centred/raw amp (v1) 0.977  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (22 s)
+    block 13: sigma1   4.472  pred/meas KL(v1, .01) 1.010  |mean g|/rms g (v1) 0.195  centred/raw amp (v1) 0.962  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (19 s)
+    block 14: sigma1   4.856  pred/meas KL(v1, .01) 1.043  |mean g|/rms g (v1) 0.225  centred/raw amp (v1) 0.949  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (22 s)
+    block 15: sigma1   5.224  pred/meas KL(v1, .01) 1.126  |mean g|/rms g (v1) 0.220  centred/raw amp (v1) 0.951  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (18 s)
+    block 16: sigma1   4.701  pred/meas KL(v1, .01) 1.007  |mean g|/rms g (v1) 0.242  centred/raw amp (v1) 0.941  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (21 s)
+    block 17: sigma1   5.787  pred/meas KL(v1, .01) 1.255  |mean g|/rms g (v1) 0.405  centred/raw amp (v1) 0.835  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (16 s)
+    block 18: sigma1   5.402  pred/meas KL(v1, .01) 0.956  |mean g|/rms g (v1) 0.151  centred/raw amp (v1) 0.977  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (20 s)
+    block 19: sigma1   6.197  pred/meas KL(v1, .01) 0.549  |mean g|/rms g (v1) 0.340  centred/raw amp (v1) 0.884  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (14 s)
+    block 20: sigma1   7.917  pred/meas KL(v1, .01) 0.516  |mean g|/rms g (v1) 0.201  centred/raw amp (v1) 0.959  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (14 s)
+    block 21: sigma1   6.315  pred/meas KL(v1, .01) 0.255  |mean g|/rms g (v1) 0.226  centred/raw amp (v1) 0.949  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (13 s)
+    block 22: sigma1  10.461  pred/meas KL(v1, .01) 0.891  |mean g|/rms g (v1) 0.188  centred/raw amp (v1) 0.965  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (13 s)
+    block 23: sigma1  10.452  pred/meas KL(v1, .01) 0.920  |mean g|/rms g (v1) 0.271  centred/raw amp (v1) 0.927  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (16 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_EleutherAI_pythia-1_4b.json (8.7 min)
+  purged Hub cache for EleutherAI/pythia-1.4b
+
+------------------------------------------------------------------------------
+meta-llama/Llama-3.2-1B
+------------------------------------------------------------------------------
+  Loading meta-llama/Llama-3.2-1B (llama, float32)...
+  16 blocks; 1236M params
+    block  0: sigma1  28.694  pred/meas KL(v1, .01) 0.988  |mean g|/rms g (v1) 0.486  centred/raw amp (v1) 0.764  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (28 s)
+    block  1: sigma1   9.169  pred/meas KL(v1, .01) 0.994  |mean g|/rms g (v1) 0.535  centred/raw amp (v1) 0.714  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (30 s)
+    block  2: sigma1   9.108  pred/meas KL(v1, .01) 1.005  |mean g|/rms g (v1) 0.567  centred/raw amp (v1) 0.679  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (32 s)
+    block  3: sigma1   7.575  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.449  centred/raw amp (v1) 0.798  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block  4: sigma1   6.764  pred/meas KL(v1, .01) 1.005  |mean g|/rms g (v1) 0.385  centred/raw amp (v1) 0.852  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (31 s)
+    block  5: sigma1   6.220  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.412  centred/raw amp (v1) 0.829  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block  6: sigma1   5.817  pred/meas KL(v1, .01) 0.974  |mean g|/rms g (v1) 0.511  centred/raw amp (v1) 0.738  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block  7: sigma1   5.049  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.518  centred/raw amp (v1) 0.731  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (30 s)
+    block  8: sigma1   5.176  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.369  centred/raw amp (v1) 0.863  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block  9: sigma1   5.673  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.611  centred/raw amp (v1) 0.627  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 10: sigma1   5.682  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.619  centred/raw amp (v1) 0.617  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (28 s)
+    block 11: sigma1   5.745  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.675  centred/raw amp (v1) 0.544  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block 12: sigma1   5.190  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.618  centred/raw amp (v1) 0.616  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (28 s)
+    block 13: sigma1   5.675  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.478  centred/raw amp (v1) 0.770  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (20 s)
+    block 14: sigma1   5.416  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.461  centred/raw amp (v1) 0.787  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (23 s)
+    block 15: sigma1   8.519  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.979  centred/raw amp (v1) 0.041  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (16 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_meta-llama_Llama-3_2-1B.json (7.1 min)
+  purged Hub cache for meta-llama/Llama-3.2-1B
+
+------------------------------------------------------------------------------
+Qwen/Qwen2.5-1.5B
+------------------------------------------------------------------------------
+  Loading Qwen/Qwen2.5-1.5B (qwen, float32)...
+  28 blocks; 1544M params
+    block  0: sigma1 155.131  pred/meas KL(v1, .01) 0.987  |mean g|/rms g (v1) 0.295  centred/raw amp (v1) 0.913  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (36 s)
+    block  1: sigma1   7.738  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.318  centred/raw amp (v1) 0.897  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (33 s)
+    block  2: sigma1   8.209  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.218  centred/raw amp (v1) 0.952  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (34 s)
+    block  3: sigma1   6.503  pred/meas KL(v1, .01) 0.997  |mean g|/rms g (v1) 0.249  centred/raw amp (v1) 0.938  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (32 s)
+    block  4: sigma1   5.691  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.255  centred/raw amp (v1) 0.934  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (33 s)
+    block  5: sigma1   5.628  pred/meas KL(v1, .01) 0.995  |mean g|/rms g (v1) 0.345  centred/raw amp (v1) 0.880  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (35 s)
+    block  6: sigma1   4.591  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.292  centred/raw amp (v1) 0.915  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (32 s)
+    block  7: sigma1   4.336  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.299  centred/raw amp (v1) 0.911  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (32 s)
+    block  8: sigma1   5.221  pred/meas KL(v1, .01) 0.998  |mean g|/rms g (v1) 0.292  centred/raw amp (v1) 0.915  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (29 s)
+    block  9: sigma1   4.769  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.298  centred/raw amp (v1) 0.910  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 10: sigma1   4.677  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.352  centred/raw amp (v1) 0.876  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block 11: sigma1   4.702  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.249  centred/raw amp (v1) 0.938  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (28 s)
+    block 12: sigma1   4.471  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.332  centred/raw amp (v1) 0.890  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block 13: sigma1   4.186  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.310  centred/raw amp (v1) 0.904  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (24 s)
+    block 14: sigma1   4.320  pred/meas KL(v1, .01) 0.998  |mean g|/rms g (v1) 0.288  centred/raw amp (v1) 0.917  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block 15: sigma1   4.501  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.336  centred/raw amp (v1) 0.887  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (21 s)
+    block 16: sigma1   4.906  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.349  centred/raw amp (v1) 0.878  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 17: sigma1   4.220  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.409  centred/raw amp (v1) 0.832  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (28 s)
+    block 18: sigma1   3.658  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.277  centred/raw amp (v1) 0.923  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 19: sigma1   4.817  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.244  centred/raw amp (v1) 0.941  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+    block 20: sigma1   4.551  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.362  centred/raw amp (v1) 0.869  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 21: sigma1   4.563  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.399  centred/raw amp (v1) 0.841  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (26 s)
+    block 22: sigma1   4.469  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.451  centred/raw amp (v1) 0.797  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (29 s)
+    block 23: sigma1   4.277  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.429  centred/raw amp (v1) 0.816  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+    block 24: sigma1   4.313  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.415  centred/raw amp (v1) 0.827  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (24 s)
+    block 25: sigma1   3.745  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.616  centred/raw amp (v1) 0.621  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (23 s)
+    block 26: sigma1   3.905  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.357  centred/raw amp (v1) 0.871  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (19 s)
+    block 27: sigma1   8.665  pred/meas KL(v1, .01) 0.988  |mean g|/rms g (v1) 0.915  centred/raw amp (v1) 0.163  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (25 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_Qwen_Qwen2_5-1_5B.json (13.1 min)
+  purged Hub cache for Qwen/Qwen2.5-1.5B
+
+------------------------------------------------------------------------------
+google/gemma-2-2b
+------------------------------------------------------------------------------
+  Loading google/gemma-2-2b (gemma2, float32)...
+  26 blocks; 2614M params
+    block  0: sigma1   6.244  pred/meas KL(v1, .01) 0.976  |mean g|/rms g (v1) 0.383  centred/raw amp (v1) 0.853  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (47 s)
+    block  1: sigma1   5.428  pred/meas KL(v1, .01) 1.007  |mean g|/rms g (v1) 0.480  centred/raw amp (v1) 0.768  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (52 s)
+    block  2: sigma1   4.919  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.407  centred/raw amp (v1) 0.834  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (49 s)
+    block  3: sigma1   5.552  pred/meas KL(v1, .01) 0.997  |mean g|/rms g (v1) 0.447  centred/raw amp (v1) 0.801  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (46 s)
+    block  4: sigma1   5.803  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.490  centred/raw amp (v1) 0.759  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (42 s)
+    block  5: sigma1   4.977  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.382  centred/raw amp (v1) 0.853  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (47 s)
+    block  6: sigma1   5.464  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.414  centred/raw amp (v1) 0.829  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (48 s)
+    block  7: sigma1   6.330  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.479  centred/raw amp (v1) 0.770  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (45 s)
+    block  8: sigma1   6.212  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.473  centred/raw amp (v1) 0.775  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (44 s)
+    block  9: sigma1   6.152  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.453  centred/raw amp (v1) 0.794  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (38 s)
+    block 10: sigma1   4.868  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.478  centred/raw amp (v1) 0.772  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (44 s)
+    block 11: sigma1   5.509  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.545  centred/raw amp (v1) 0.703  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (38 s)
+    block 12: sigma1   4.769  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.479  centred/raw amp (v1) 0.770  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (43 s)
+    block 13: sigma1   4.505  pred/meas KL(v1, .01) 1.002  |mean g|/rms g (v1) 0.444  centred/raw amp (v1) 0.803  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (41 s)
+    block 14: sigma1   4.713  pred/meas KL(v1, .01) 0.999  |mean g|/rms g (v1) 0.600  centred/raw amp (v1) 0.639  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (38 s)
+    block 15: sigma1   4.462  pred/meas KL(v1, .01) 1.000  |mean g|/rms g (v1) 0.583  centred/raw amp (v1) 0.660  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (40 s)
+    block 16: sigma1   4.409  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.398  centred/raw amp (v1) 0.841  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (43 s)
+    block 17: sigma1   4.136  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.504  centred/raw amp (v1) 0.745  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (41 s)
+    block 18: sigma1   4.893  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.474  centred/raw amp (v1) 0.775  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (43 s)
+    block 19: sigma1   3.998  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.351  centred/raw amp (v1) 0.877  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (44 s)
+    block 20: sigma1   3.938  pred/meas KL(v1, .01) 1.004  |mean g|/rms g (v1) 0.360  centred/raw amp (v1) 0.870  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (41 s)
+    block 21: sigma1   4.443  pred/meas KL(v1, .01) 1.003  |mean g|/rms g (v1) 0.361  centred/raw amp (v1) 0.870  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (42 s)
+    block 22: sigma1   4.391  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.405  centred/raw amp (v1) 0.835  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (36 s)
+    block 23: sigma1   3.850  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.293  centred/raw amp (v1) 0.913  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (36 s)
+    block 24: sigma1   4.330  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.560  centred/raw amp (v1) 0.686  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (44 s)
+    block 25: sigma1   8.390  pred/meas KL(v1, .01) 1.001  |mean g|/rms g (v1) 0.682  centred/raw amp (v1) 0.534  |dev| vs assay: quad 0.0e+00 sigma1 0.0e+00  (27 s)
+  saved /content/drive/MyDrive/hourglass/matched_pretrained_centred/results/lc_google_gemma-2-2b.json (18.3 min)
+  purged Hub cache for google/gemma-2-2b
+
+model              L amp v1/rand   align | centred amp   align | p-centred amp   align | quad ratio pred/meas dev. assay
+Pythia-1.4B       24       23.68    1.05 |       23.00    1.09 |         25.94    0.93 |      24.96     1.001    0.0e+00
+Pythia-410M       24        8.62    1.01 |        8.22    1.07 |          9.12    0.93 |       8.73     1.000    0.0e+00
+Qwen2.5-1.5B      28       15.19    0.96 |       14.28    1.06 |         14.81    0.94 |      14.98     1.001    0.0e+00
+Gemma-2-2B        26       16.23    0.76 |       14.52    1.02 |         15.87    0.85 |      14.86     1.001    0.0e+00
+GPT-2 124M        12       11.24    0.21 |       17.28    1.06 |         16.91    1.02 |      18.42     0.999    0.0e+00
+Llama-3.2-1B      16       32.27    0.89 |       27.46    1.14 |         29.00    1.02 |      30.95     1.002    0.0e+00
+export: 6 files -> /content/drive/MyDrive/hourglass/matched_pretrained_centred/linresp_pretrained_centred_results.zip (3.5 MB)
+export: 6 files -> /content/linresp_pretrained_centred_results.zip (3.5 MB)

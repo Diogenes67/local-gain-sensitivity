@@ -1,0 +1,117 @@
+{
+ "hf_id": "facebook/wav2vec2-base-960h",
+ "arch": "wav2vec2",
+ "family": "Audio encoder",
+ "n_layers": 12,
+ "d_model": 768,
+ "params_M": 95,
+ "protocol": "branch-rotation-v4",
+ "version": "census-v4-2026-09-20",
+ "baseline": 0.5962375914057095,
+ "delta_L_profile": [
+  3.5289318685730295,
+  1.7034884616732597,
+  1.7847658519943557,
+  1.7374774937828383,
+  1.8856481199463206,
+  1.4142802442113558,
+  1.1593524500727654,
+  1.3577293917536735,
+  3.0532616342107453,
+  2.1642235403259593,
+  3.709635739028454,
+  8.886083957056206
+ ],
+ "delta_L_ci": [
+  [
+   3.1968000785013038,
+   3.9970424154400828
+  ],
+  [
+   1.5025146703049541,
+   1.9320541000242035
+  ],
+  [
+   1.7050758892670275,
+   1.8698409838850296
+  ],
+  [
+   1.6518605245649813,
+   1.8100968031709395
+  ],
+  [
+   1.791853527824084,
+   1.9769235938911638
+  ],
+  [
+   1.3301121465737624,
+   1.4902851433182756
+  ],
+  [
+   1.0524602300425372,
+   1.2518820220356186
+  ],
+  [
+   1.2431597051396965,
+   1.4411793105552595
+  ],
+  [
+   2.8744677325710652,
+   3.2089411871259412
+  ],
+  [
+   2.0358194184054934,
+   2.27450501990815
+  ],
+  [
+   3.5965218862394495,
+   3.7985137954850994
+  ],
+  [
+   7.649077859222889,
+   10.385945680489144
+  ]
+ ],
+ "kl_profile": [
+  2.7883978366851805,
+  2.0308522383371987,
+  2.0292436798413593,
+  2.0646397272745767,
+  2.143818120161692,
+  1.6168240070343018,
+  1.786926766236623,
+  1.379126822948456,
+  2.1301931977272033,
+  1.6703146338462829,
+  2.430539067586263,
+  2.870169973373413
+ ],
+ "baseline_kl": 0.0,
+ "readout": "CTC loss against the reference transcript, LibriSpeech test-clean, utterances of at most 10 s",
+ "kl_readout": "KL(clean || scrambled) over the model's own output distribution (masked/target positions for text, valid frames for CTC, all classes for vision)",
+ "hooks": [
+  "attention",
+  "feed_forward"
+ ],
+ "branch_widths_block0": [
+  768,
+  768
+ ],
+ "dose": 1.0,
+ "seed": 42,
+ "n_batches": 30,
+ "batch_size": 4,
+ "plumbing_dose0_abs_dL": 0.0,
+ "plumbing_dose1_dL_block": 1,
+ "plumbing_dose1_dL": 1.7034884616732597,
+ "sigma1_source": "survey_sigma1_v2 (incontext-natural-block-float32); not recomputed here",
+ "quick": false,
+ "elapsed_seconds": 21.66846513748169,
+ "prov_torch": "2.11.0+cu128",
+ "prov_transformers": "5.16.1",
+ "prov_python": "3.13.15",
+ "prov_date": "2026-09-21T10:37:53",
+ "prov_device": "cuda",
+ "prov_timm": "1.0.29",
+ "prov_gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

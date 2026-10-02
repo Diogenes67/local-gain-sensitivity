@@ -1,0 +1,16 @@
+model               R30           CI30   E/M   L/M valley30 |    R5          CI5 valley5 | 5-input subsets
+Pythia-1.4B       0.682 [0.665,0.700]  1.12  1.81     True | 0.705 [0.69,0.72]    True | 0.640-0.707  R30 outside 5-input CI
+Pythia-410M       0.837 [0.821,0.852]  1.09  1.31    False | 0.839 [0.81,0.87]   False | 0.819-0.869
+RoBERTa-large     1.417 [1.394,1.440]  0.86  0.55    False | 1.342 [1.24,1.44]   False | 1.390-1.443
+Qwen2.5-1.5B      0.847 [0.834,0.860]  1.30  1.06    False | 0.856 [0.82,0.89]   False | 0.819-0.889
+ConvNeXt-base     0.522 [0.506,0.537]  2.15  1.68     True | 0.490 [0.47,0.51]    True | 0.501-0.565  R30 outside 5-input CI
+DINOv2-base       0.764 [0.737,0.796]  1.15  1.47     True | 0.769 [0.72,0.82]    True | 0.688-0.820
+Gemma-2-2B        0.948 [0.933,0.962]  1.04  1.07    False | 0.962 [0.91,1.01]   False | 0.914-0.997
+ViT-base          0.746 [0.697,0.801]  0.89  1.79    False | 0.806 [0.68,0.98]   False | 0.649-0.821
+GPT-2 124M        0.741 [0.726,0.759]  1.28  1.42     True | 0.713 [0.68,0.75]    True | 0.705-0.789
+Llama-3.2-1B      0.819 [0.806,0.833]  1.34  1.10    False | 0.815 [0.81,0.83]   False | 0.792-0.835
+Mamba-130M        0.544 [0.533,0.555]  1.23  2.45     True | 0.514 [0.50,0.53]    True | 0.522-0.562  R30 outside 5-input CI
+
+census association, five-input survey: rho +0.055 CI -0.24 to +0.36 (n = 44)
+census association, 30-input values for the 11 models: rho +0.037 CI -0.26 to +0.34
+decoders only: (-0.18379446640316205, 23) (-0.18379446640316205, 23)

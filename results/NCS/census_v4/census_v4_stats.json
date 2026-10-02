@@ -1,0 +1,93 @@
+{
+ "n_models": 45,
+ "n_valid": 44,
+ "excluded": [
+  [
+   "Flan-T5-large (encoder)",
+   0.501,
+   -0.105,
+   "ceiling"
+  ]
+ ],
+ "n_sensitive": 43,
+ "hg_positive_valid": 14,
+ "hg_pos_sensitive": 14,
+ "hg_neg_sensitive": 29,
+ "hg_neg_total": 30,
+ "spearman_all": [
+  0.05454545454545454,
+  0.72509358030854
+ ],
+ "spearman_all_ci": [
+  -0.23666885826432643,
+  0.35801413810348026
+ ],
+ "n_decoders": 23,
+ "spearman_decoders": [
+  -0.18379446640316205,
+  0.40120109039639584
+ ],
+ "spearman_decoders_ci": [
+  -0.5638350720317934,
+  0.23810353409656534
+ ],
+ "leave_one_family_out": {
+  "AR decoder": 0.23896103896103899,
+  "Audio encoder": 0.02584879669394701,
+  "ConvNet": 0.06510318949343341,
+  "DINOv2": 0.09090909090909091,
+  "MLP-Mixer": 0.15403938092537073,
+  "Masked encoder": -0.09362101313320827,
+  "SSM": 0.01106941838649156,
+  "T5 encoder": -0.033972125435540075,
+  "ViT": 0.07626094835397161
+ },
+ "max_abs_loo": 0.23896103896103899,
+ "within_family": {
+  "AR decoder": [
+   23,
+   -0.18379446640316205,
+   0.40120109039639584
+  ],
+  "ConvNet": [
+   4,
+   -1.0,
+   0.0
+  ],
+  "Masked encoder": [
+   4,
+   -0.39999999999999997,
+   0.6
+  ],
+  "SSM": [
+   4,
+   1.0,
+   0.0
+  ]
+ },
+ "kl_readout_n": 13,
+ "cells": {
+  "geometry+sensitivity": 14,
+  "geometry only": 0,
+  "sensitivity only": 29,
+  "neither": 1,
+  "excluded": 1
+ },
+ "insensitive_valid": [
+  [
+   "Phi-2",
+   0.038,
+   0.081
+  ]
+ ],
+ "Phi-2": {
+  "R": 0.802,
+  "waist": 0.038,
+  "we": 0.081
+ },
+ "Pythia-12B": {
+  "R": 0.934,
+  "waist": 0.28,
+  "we": 0.186
+ }
+}
