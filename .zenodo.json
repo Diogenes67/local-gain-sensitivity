@@ -3,7 +3,7 @@
   "upload_type": "software",
   "description": "<p>Code, result files and SHA-256 manifest for the Patterns submission. 98 scripts and notebooks (survey estimator, exact-decomposition validation, controlled training experiments, matched token-local perturbation assay, linearised response, pretrained census, analysis, figures, tables and manuscript build) and 260 result files (107 MB). Code is released under the MIT licence and the result files under CC BY 4.0. Table S7 of the paper names the script behind every result; README.md gives the layout and rebuild commands.</p>",
   "creators": [
-    {"name": "Porter, Anthony", "affiliation": "Australian Institute for Machine Learning, Adelaide University; Central Adelaide Local Health Network", "orcid": "0000-0000-0000-0000"},
+    {"name": "Porter, Anthony", "affiliation": "Australian Institute for Machine Learning, Adelaide University; Central Adelaide Local Health Network"},
     {"name": "Hassen, Nadhir", "affiliation": "Australian Institute for Machine Learning, Adelaide University"},
     {"name": "Saratchandran, Hemanth", "affiliation": "Australian Institute for Machine Learning, Adelaide University"},
     {"name": "Liao, Zhibin", "affiliation": "Australian Institute for Machine Learning, Adelaide University"},
